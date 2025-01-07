@@ -1,18 +1,27 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+// You can declare functions at the top!
+
+// Pin number for the LED
+const int ledPin = 13; // Change this if your LED is connected to a different pin
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+  // Set the LED pin as an output
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Turn the LED on
+  digitalWrite(ledPin, HIGH);
+  delay(1000); // Wait for 1 second
+  Serial.println("LED is on\n");
+
+  // Turn the LED off
+  digitalWrite(ledPin, LOW);
+  delay(1000); // Wait for 1 second
+  Serial.println("LED is on\n");
+
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
+// and then put the function definitions later!
