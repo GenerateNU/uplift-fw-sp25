@@ -1,0 +1,31 @@
+name: Generate Hardware CI/CD
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-20.04
+
+        steps:
+        - name: Git Checkout
+          uses: actions/checkout@v2
+
+        - name: Set up PlatformIO
+          uses: platformio/action-core@v2
+          with:
+            python-version: '3.8'  # Specify Python version
+
+        - name: Install PlatformIO dependencies
+          run: pio pkg install
+
+        - name: Build Project
+          run: pio run
+
+        - name: Clean Build Files
+          run: pio run --target clean
