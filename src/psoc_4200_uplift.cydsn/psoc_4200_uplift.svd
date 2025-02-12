@@ -7,7 +7,7 @@
   <width>32</width>
   <peripherals>
     <peripheral>
-      <name>PWM_1</name>
+      <name>PWM_FRONT_C</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -64,7 +64,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>PWM_2</name>
+      <name>PWM_BACK_C</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>

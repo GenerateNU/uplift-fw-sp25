@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: PWM_1_PM.c
+* File Name: PWM_BACK_C_PM.c
 * Version 2.10
 *
 * Description:
@@ -16,13 +16,13 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "PWM_1.h"
+#include "PWM_BACK_C.h"
 
-static PWM_1_BACKUP_STRUCT PWM_1_backup;
+static PWM_BACK_C_BACKUP_STRUCT PWM_BACK_C_backup;
 
 
 /*******************************************************************************
-* Function Name: PWM_1_SaveConfig
+* Function Name: PWM_BACK_C_SaveConfig
 ********************************************************************************
 *
 * Summary:
@@ -35,14 +35,14 @@ static PWM_1_BACKUP_STRUCT PWM_1_backup;
 *  None
 *
 *******************************************************************************/
-void PWM_1_SaveConfig(void)
+void PWM_BACK_C_SaveConfig(void)
 {
 
 }
 
 
 /*******************************************************************************
-* Function Name: PWM_1_Sleep
+* Function Name: PWM_BACK_C_Sleep
 ********************************************************************************
 *
 * Summary:
@@ -55,24 +55,24 @@ void PWM_1_SaveConfig(void)
 *  None
 *
 *******************************************************************************/
-void PWM_1_Sleep(void)
+void PWM_BACK_C_Sleep(void)
 {
-    if(0u != (PWM_1_BLOCK_CONTROL_REG & PWM_1_MASK))
+    if(0u != (PWM_BACK_C_BLOCK_CONTROL_REG & PWM_BACK_C_MASK))
     {
-        PWM_1_backup.enableState = 1u;
+        PWM_BACK_C_backup.enableState = 1u;
     }
     else
     {
-        PWM_1_backup.enableState = 0u;
+        PWM_BACK_C_backup.enableState = 0u;
     }
 
-    PWM_1_Stop();
-    PWM_1_SaveConfig();
+    PWM_BACK_C_Stop();
+    PWM_BACK_C_SaveConfig();
 }
 
 
 /*******************************************************************************
-* Function Name: PWM_1_RestoreConfig
+* Function Name: PWM_BACK_C_RestoreConfig
 ********************************************************************************
 *
 * Summary:
@@ -85,14 +85,14 @@ void PWM_1_Sleep(void)
 *  None
 *
 *******************************************************************************/
-void PWM_1_RestoreConfig(void)
+void PWM_BACK_C_RestoreConfig(void)
 {
 
 }
 
 
 /*******************************************************************************
-* Function Name: PWM_1_Wakeup
+* Function Name: PWM_BACK_C_Wakeup
 ********************************************************************************
 *
 * Summary:
@@ -105,13 +105,13 @@ void PWM_1_RestoreConfig(void)
 *  None
 *
 *******************************************************************************/
-void PWM_1_Wakeup(void)
+void PWM_BACK_C_Wakeup(void)
 {
-    PWM_1_RestoreConfig();
+    PWM_BACK_C_RestoreConfig();
 
-    if(0u != PWM_1_backup.enableState)
+    if(0u != PWM_BACK_C_backup.enableState)
     {
-        PWM_1_Enable();
+        PWM_BACK_C_Enable();
     }
 }
 

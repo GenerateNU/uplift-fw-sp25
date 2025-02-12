@@ -2,7 +2,7 @@
 --	Conversion of psoc_4200_uplift.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Feb 11 21:00:28 2025
+--	Tue Feb 11 21:40:48 2025
 --
 
 USE cypress.cypress.all;
@@ -71,12 +71,12 @@ SIGNAL Net_14 : bit;
 SIGNAL Net_17 : bit;
 SIGNAL Net_18 : bit;
 SIGNAL Net_25 : bit;
-SIGNAL \PWM_2:Net_81\ : bit;
-SIGNAL \PWM_2:Net_75\ : bit;
-SIGNAL \PWM_2:Net_69\ : bit;
-SIGNAL \PWM_2:Net_66\ : bit;
-SIGNAL \PWM_2:Net_82\ : bit;
-SIGNAL \PWM_2:Net_72\ : bit;
+SIGNAL \PWM_BACK_C:Net_81\ : bit;
+SIGNAL \PWM_BACK_C:Net_75\ : bit;
+SIGNAL \PWM_BACK_C:Net_69\ : bit;
+SIGNAL \PWM_BACK_C:Net_66\ : bit;
+SIGNAL \PWM_BACK_C:Net_82\ : bit;
+SIGNAL \PWM_BACK_C:Net_72\ : bit;
 SIGNAL Net_70 : bit;
 SIGNAL Net_66 : bit;
 SIGNAL Net_60 : bit;
@@ -108,12 +108,12 @@ SIGNAL tmpFB_0__ENABLE_MOTORS_net_0 : bit;
 SIGNAL tmpIO_0__ENABLE_MOTORS_net_0 : bit;
 TERMINAL tmpSIOVREF__ENABLE_MOTORS_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__ENABLE_MOTORS_net_0 : bit;
-SIGNAL \PWM_1:Net_81\ : bit;
-SIGNAL \PWM_1:Net_75\ : bit;
-SIGNAL \PWM_1:Net_69\ : bit;
-SIGNAL \PWM_1:Net_66\ : bit;
-SIGNAL \PWM_1:Net_82\ : bit;
-SIGNAL \PWM_1:Net_72\ : bit;
+SIGNAL \PWM_FRONT_C:Net_81\ : bit;
+SIGNAL \PWM_FRONT_C:Net_75\ : bit;
+SIGNAL \PWM_FRONT_C:Net_69\ : bit;
+SIGNAL \PWM_FRONT_C:Net_66\ : bit;
+SIGNAL \PWM_FRONT_C:Net_82\ : bit;
+SIGNAL \PWM_FRONT_C:Net_72\ : bit;
 SIGNAL Net_54 : bit;
 SIGNAL Net_50 : bit;
 SIGNAL Net_44 : bit;
@@ -480,7 +480,7 @@ PWM_FRONT:cy_psoc3_pins_v1_10
 		sda=>Net_23,
 		tx_req=>Net_24,
 		rx_req=>Net_15);
-\PWM_2:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
+\PWM_BACK_C:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(clock=>Net_45,
 		capture=>zero,
@@ -854,7 +854,7 @@ ENABLE_MOTORS:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__PWM_BACK_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__ENABLE_MOTORS_net_0);
-\PWM_1:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
+\PWM_FRONT_C:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(clock=>Net_45,
 		capture=>zero,

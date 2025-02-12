@@ -1,5 +1,5 @@
 -- Project:   psoc_4200_uplift
--- Generated: 02/11/2025 21:00:29
+-- Generated: 02/11/2025 21:40:48
 -- PSoC Creator  4.4
 
 ENTITY psoc_4200_uplift IS
@@ -1914,11 +1914,11 @@ BEGIN
             tr_tx_req => Net_24,
             tr_rx_req => Net_15);
 
-    \PWM_2:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
+    \PWM_BACK_C:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => Net_45_ff9,
+            clock => Net_45_ff8,
             capture => '0',
             count => '1',
             reload => '0',
@@ -1931,11 +1931,11 @@ BEGIN
             line_compl => Net_65,
             interrupt => Net_63);
 
-    \PWM_1:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
+    \PWM_FRONT_C:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => Net_45_ff8,
+            clock => Net_45_ff9,
             capture => '0',
             count => '1',
             reload => '0',

@@ -103,7 +103,7 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\BUTTON_TILT_EN_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\Bootloader_1.o">
+<file name=".\CortexM0\ARM_GCC_541\Debug\Bootloader_0.o">
 <dep name=".\Generated_Source\PSoC4\BUTTON_DIR_DOWN.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_DIR_DOWN_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_DIR_UP.h" />
@@ -112,9 +112,9 @@
 <dep name=".\Generated_Source\PSoC4\BUTTON_MOTOR_EN_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Bootloader_1.c" />
-<dep name=".\Generated_Source\PSoC4\Bootloader_1.h" />
-<dep name=".\Generated_Source\PSoC4\Bootloader_1_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_0.c" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_0.h" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_0_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -149,11 +149,11 @@
 <dep name=".\Generated_Source\PSoC4\LED_2_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LED_3.h" />
 <dep name=".\Generated_Source\PSoC4\LED_3_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_BACK.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_BACK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_FRONT.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_FRONT_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
@@ -171,9 +171,9 @@
 <dep name=".\Generated_Source\PSoC4\project.h" />
 <dep name=".\cyapicallbacks.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\Bootloader_1.c" />
-<file name=".\Generated_Source\PSoC4\Bootloader_1.h" />
-<file name=".\Generated_Source\PSoC4\Bootloader_1_PVT.h" />
+<file name=".\Generated_Source\PSoC4\Bootloader_0.c" />
+<file name=".\Generated_Source\PSoC4\Bootloader_0.h" />
+<file name=".\Generated_Source\PSoC4\Bootloader_0_PVT.h" />
 <file name=".\Generated_Source\PSoC4\Clock_1.h" />
 <file name=".\Generated_Source\PSoC4\CyFlash.h" />
 <file name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -208,11 +208,11 @@
 <file name=".\Generated_Source\PSoC4\LED_2_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LED_3.h" />
 <file name=".\Generated_Source\PSoC4\LED_3_aliases.h" />
-<file name=".\Generated_Source\PSoC4\PWM_1.h" />
-<file name=".\Generated_Source\PSoC4\PWM_2.h" />
 <file name=".\Generated_Source\PSoC4\PWM_BACK.h" />
+<file name=".\Generated_Source\PSoC4\PWM_BACK_C.h" />
 <file name=".\Generated_Source\PSoC4\PWM_BACK_aliases.h" />
 <file name=".\Generated_Source\PSoC4\PWM_FRONT.h" />
+<file name=".\Generated_Source\PSoC4\PWM_FRONT_C.h" />
 <file name=".\Generated_Source\PSoC4\PWM_FRONT_aliases.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
@@ -654,46 +654,6 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LED_3_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_1.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_1.c" />
-<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\PWM_1.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_1_PM.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_2.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_2.c" />
-<dep name=".\Generated_Source\PSoC4\PWM_2.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\PWM_2.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_2_PM.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_2.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_2_PM.c" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\PWM_2_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK.o">
 <dep name=".\Generated_Source\PSoC4\PWM_BACK.c" />
 <dep name=".\Generated_Source\PSoC4\PWM_BACK.h" />
@@ -704,6 +664,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\PWM_BACK.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK_C.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C.c" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_BACK_C.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK_C_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_BACK_C_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK_PM.o">
 <dep name=".\Generated_Source\PSoC4\PWM_BACK.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_BACK_PM.c" />
@@ -724,6 +704,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\PWM_FRONT.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_C.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C.c" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_FRONT_C.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_C_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_FRONT_C_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_PM.o">
 <dep name=".\Generated_Source\PSoC4\PWM_FRONT.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_FRONT_PM.c" />
@@ -788,6 +788,83 @@
 <dep name=".\Generated_Source\PSoC4\BUTTON_MOTOR_EN_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN.h" />
 <dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_0.h" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_0_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_BACK_LEFT.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_BACK_LEFT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_BACK_RIGHT.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_BACK_RIGHT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_FRONT_LEFT.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_FRONT_LEFT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_FRONT_RIGHT.h" />
+<dep name=".\Generated_Source\PSoC4\DIR_FRONT_RIGHT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\ENABLE_MOTORS.h" />
+<dep name=".\Generated_Source\PSoC4\ENABLE_MOTORS_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_I2C.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_I2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_scl.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_sda.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_0_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LED_0.h" />
+<dep name=".\Generated_Source\PSoC4\LED_0_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LED_1.h" />
+<dep name=".\Generated_Source\PSoC4\LED_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LED_2.h" />
+<dep name=".\Generated_Source\PSoC4\LED_2_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LED_3.h" />
+<dep name=".\Generated_Source\PSoC4\LED_3_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_C.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BACK_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_C.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_FRONT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\main.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o">
+<dep name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<dep name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
+<dep name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
+<file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Bootloader_1.o">
+<dep name=".\Generated_Source\PSoC4\BUTTON_DIR_DOWN.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_DIR_DOWN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_DIR_UP.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_DIR_UP_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_MOTOR_EN.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_MOTOR_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN.h" />
+<dep name=".\Generated_Source\PSoC4\BUTTON_TILT_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Bootloader_1.c" />
 <dep name=".\Generated_Source\PSoC4\Bootloader_1.h" />
 <dep name=".\Generated_Source\PSoC4\Bootloader_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\Clock_1.h" />
@@ -844,17 +921,53 @@
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 <dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\main.c" />
+<dep name=".\cyapicallbacks.h" />
 </file>
-<file name=".\main.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o">
-<dep name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
-<dep name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
-<dep name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC4\Bootloader_1.c" />
+<file name=".\Generated_Source\PSoC4\Bootloader_1.h" />
+<file name=".\Generated_Source\PSoC4\Bootloader_1_PVT.h" />
+<file name=".\Generated_Source\PSoC4\PWM_1.h" />
+<file name=".\Generated_Source\PSoC4\PWM_2.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_1.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.c" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
-<file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
-<file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC4\PWM_1.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_1_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_2.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_2.c" />
+<dep name=".\Generated_Source\PSoC4\PWM_2.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_2.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\PWM_2_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_2.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_2_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_2_PM.c" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -886,9 +999,6 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_I2C_MASTER.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_BOOT.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\Bootloader_1.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_2.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_2_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\Clock_1.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\DIR_FRONT_LEFT.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\DIR_FRONT_LEFT_PM.o" />
@@ -900,8 +1010,6 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\DIR_BACK_RIGHT_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\ENABLE_MOTORS.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\ENABLE_MOTORS_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_1.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_1_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LED_0.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LED_0_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LED_1.o" />
@@ -924,6 +1032,11 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_scl.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_scl_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\I2C_0_SCB_IRQ.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\Bootloader_0.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK_C.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_BACK_C_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_C.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_C_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -997,6 +1110,11 @@
 <name_val_pair name="Generated_Source\PSoC4\I2C_0_scl.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\I2C_0_scl_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\I2C_0_SCB_IRQ.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\Bootloader_0.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_BACK_C.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_BACK_C_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_FRONT_C.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_FRONT_C_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\amant\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj -d CY8C4245AXI-483 -s C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -1391,13 +1509,22 @@
 <v>Generated_Source\PSoC4\I2C_0_scl_PM.c</v>
 <v>Generated_Source\PSoC4\I2C_0_SCB_IRQ.c</v>
 <v>Generated_Source\PSoC4\I2C_0_SCB_IRQ.h</v>
+<v>Generated_Source\PSoC4\Bootloader_0.h</v>
+<v>Generated_Source\PSoC4\Bootloader_0.c</v>
+<v>Generated_Source\PSoC4\Bootloader_0_PVT.h</v>
+<v>Generated_Source\PSoC4\PWM_BACK_C.c</v>
+<v>Generated_Source\PSoC4\PWM_BACK_C.h</v>
+<v>Generated_Source\PSoC4\PWM_BACK_C_PM.c</v>
+<v>Generated_Source\PSoC4\PWM_FRONT_C.c</v>
+<v>Generated_Source\PSoC4\PWM_FRONT_C.h</v>
+<v>Generated_Source\PSoC4\PWM_FRONT_C_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="133837992312057574" />
+<deps_time v="133838016510644948" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1407,7 +1534,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133837992397001813" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133838016597940568" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

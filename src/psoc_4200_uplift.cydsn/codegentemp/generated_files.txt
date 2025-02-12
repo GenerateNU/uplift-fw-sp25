@@ -34,12 +34,12 @@
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_I2C_PVT.h" value="HEADER;;;;;I2C_0" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_PVT.h" value="HEADER;;;;;I2C_0" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_BOOT.h" value="HEADER;;;;;I2C_0" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_1.h" value="HEADER;;;;;Bootloader_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_1.c" value="SOURCE_C;CortexM0;;;;Bootloader_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_1_PVT.h" value="HEADER;;;;;Bootloader_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_2.c" value="SOURCE_C;CortexM0;;;;PWM_2" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_2.h" value="HEADER;;;;;PWM_2" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_2_PM.c" value="SOURCE_C;CortexM0;;;;PWM_2" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_0.h" value="HEADER;;;;;Bootloader_0" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_0.c" value="SOURCE_C;CortexM0;;;;Bootloader_0" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Bootloader_0_PVT.h" value="HEADER;;;;;Bootloader_0" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_BACK_C.c" value="SOURCE_C;CortexM0;;;;PWM_BACK_C" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_BACK_C.h" value="HEADER;;;;;PWM_BACK_C" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_BACK_C_PM.c" value="SOURCE_C;CortexM0;;;;PWM_BACK_C" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM0;;;;Clock_1" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_LEFT.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT_LEFT" />
@@ -62,9 +62,9 @@
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\ENABLE_MOTORS.h" value="HEADER;;;;;ENABLE_MOTORS" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\ENABLE_MOTORS_aliases.h" value="HEADER;;;;;ENABLE_MOTORS" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\ENABLE_MOTORS_PM.c" value="SOURCE_C;CortexM0;;;;ENABLE_MOTORS" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_1.c" value="SOURCE_C;CortexM0;;;;PWM_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_1.h" value="HEADER;;;;;PWM_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_1_PM.c" value="SOURCE_C;CortexM0;;;;PWM_1" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_FRONT_C.c" value="SOURCE_C;CortexM0;;;;PWM_FRONT_C" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_FRONT_C.h" value="HEADER;;;;;PWM_FRONT_C" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_FRONT_C_PM.c" value="SOURCE_C;CortexM0;;;;PWM_FRONT_C" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LED_0.c" value="SOURCE_C;CortexM0;;;;LED_0" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LED_0.h" value="HEADER;;;;;LED_0" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LED_0_aliases.h" value="HEADER;;;;;LED_0" />

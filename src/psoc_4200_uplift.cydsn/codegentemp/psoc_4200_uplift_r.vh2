@@ -1,5 +1,5 @@
 -- Project:   psoc_4200_uplift
--- Generated: 02/11/2025 21:00:29
+-- Generated: 02/11/2025 21:40:49
 -- PSoC Creator  4.4
 
 ENTITY psoc_4200_uplift IS
@@ -129,8 +129,8 @@ ARCHITECTURE __DEFAULT__ OF psoc_4200_uplift IS
     ATTRIBUTE Location OF BUTTON_DIR_DOWN(0) : LABEL IS "P0[7]";
     ATTRIBUTE Location OF \I2C_0:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(10)]";
     ATTRIBUTE Location OF \I2C_0:SCB\ : LABEL IS "F(SCB,0)";
-    ATTRIBUTE Location OF \PWM_2:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,0)";
-    ATTRIBUTE Location OF \PWM_1:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,1)";
+    ATTRIBUTE Location OF \PWM_BACK_C:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,0)";
+    ATTRIBUTE Location OF \PWM_FRONT_C:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,1)";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -342,8 +342,8 @@ BEGIN
             ilo => ClockBlock_ILO,
             lfclk => ClockBlock_LFClk,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_8 => Net_45_ff9,
-            ff_div_9 => Net_45_ff8,
+            ff_div_8 => Net_45_ff8,
+            ff_div_9 => Net_45_ff9,
             ff_div_2 => \I2C_0:Net_847_ff2\);
 
     PWM_BACK:logicalport
@@ -1919,11 +1919,11 @@ BEGIN
             tr_tx_req => Net_24,
             tr_rx_req => Net_15);
 
-    \PWM_2:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
+    \PWM_BACK_C:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => Net_45_ff9,
+            clock => Net_45_ff8,
             capture => '0',
             count => '1',
             reload => '0',
@@ -1936,11 +1936,11 @@ BEGIN
             line_compl => Net_65,
             interrupt => Net_63);
 
-    \PWM_1:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
+    \PWM_FRONT_C:cy_m0s8_tcpwm_1\:m0s8tcpwmcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => Net_45_ff8,
+            clock => Net_45_ff9,
             capture => '0',
             count => '1',
             reload => '0',

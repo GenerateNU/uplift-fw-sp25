@@ -4,12 +4,12 @@ Archive member included to satisfy reference by file (symbol)
                               .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CyIntEnable)
 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
                               .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CySysWdtIsr)
-.\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+.\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
                               .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o (CyBtldr_CheckLaunch)
 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
                               .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o) (CyDelayCycles)
 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
-                              .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o) (CySysFlashWriteRow)
+                              .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o) (CySysFlashWriteRow)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
                               .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o) (__aeabi_uidiv)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
@@ -197,23 +197,23 @@ Discarded input sections
  .text.CySysTimerDelay
                 0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
  .rodata        0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .data          0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_LaunchApplication
-                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_Calc8BitSum
-                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_SetFlashByte
-                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_SetActiveAppInMetadata
-                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_ValidateBootloadable
-                0x00000000       0x6c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_Exit
-                0x00000000       0x64 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_Start
-                0x00000000       0xe8 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .data          0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_LaunchApplication
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_Calc8BitSum
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_SetFlashByte
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_SetActiveAppInMetadata
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_ValidateBootloadable
+                0x00000000       0x6c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_Exit
+                0x00000000       0x64 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_Start
+                0x00000000       0xe8 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
@@ -379,15 +379,15 @@ END GROUP
  .text.CySysWdtIsr
                 0x00000558       0xa4 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
                 0x00000558                CySysWdtIsr
- .text.Bootloader_1_LaunchBootloadable
-                0x000005fc        0x4 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
- .text.Bootloader_1_GetMetadata
-                0x00000600      0x140 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
-                0x00000600                Bootloader_1_GetMetadata
- .text.Bootloader_1_GetActiveAppFromMetadata
-                0x00000740       0x30 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .text.Bootloader_0_LaunchBootloadable
+                0x000005fc        0x4 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+ .text.Bootloader_0_GetMetadata
+                0x00000600      0x140 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+                0x00000600                Bootloader_0_GetMetadata
+ .text.Bootloader_0_GetActiveAppFromMetadata
+                0x00000740       0x30 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .text.CyBtldr_CheckLaunch
-                0x00000770       0x4c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+                0x00000770       0x4c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
                 0x00000770                CyBtldr_CheckLaunch
  *fill*         0x000007bc        0x4 
  .text          0x000007c0       0x24 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
@@ -410,9 +410,9 @@ END GROUP
  *(.vfp11_veneer)
  .vfp11_veneer  0x0000084c        0x0 linker stubs
  *(.bootloader)
- .bootloader    0x0000084c        0x5 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
-                0x0000084c                Bootloader_1_SizeBytes
-                0x00000850                Bootloader_1_Checksum
+ .bootloader    0x0000084c        0x5 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
+                0x0000084c                Bootloader_0_SizeBytes
+                0x00000850                Bootloader_0_Checksum
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
@@ -441,7 +441,7 @@ END GROUP
  .rodata        0x00000878       0x2e .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
                 0x00000878                cyImoFreqMhz2Reg
  *fill*         0x000008a6        0x2 
- .rodata        0x000008a8       0x34 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .rodata        0x000008a8       0x34 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .rodata.str1.1
                 0x000008dc        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
                 0x000008e0                . = ALIGN (0x4)
@@ -636,7 +636,7 @@ END GROUP
  .debug_aranges
                 0x00000238      0x138 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
  .debug_aranges
-                0x00000370       0x70 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+                0x00000370       0x70 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_aranges
                 0x000003e0       0x20 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .debug_aranges
@@ -653,7 +653,7 @@ END GROUP
  .debug_info    0x00000562      0x3c7 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_info    0x00000929      0xaed .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_info    0x00001416      0xcfe .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_info    0x00002114      0x6f8 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_info    0x00002114      0x6f8 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_info    0x0000280c       0xa1 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .debug_info    0x000028ad      0x33d .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
@@ -665,7 +665,7 @@ END GROUP
  .debug_abbrev  0x0000023d      0x1e8 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_abbrev  0x00000425      0x1d3 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_abbrev  0x000005f8      0x210 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_abbrev  0x00000808      0x1ed .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_abbrev  0x00000808      0x1ed .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_abbrev  0x000009f5       0x14 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .debug_abbrev  0x00000a09      0x19c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
@@ -677,7 +677,7 @@ END GROUP
  .debug_line    0x000002de      0x238 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_line    0x00000516      0x460 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_line    0x00000976      0x466 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_line    0x00000ddc      0x28a .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_line    0x00000ddc      0x28a .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_line    0x00001066       0x69 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .debug_line    0x000010cf      0x18c .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
@@ -688,7 +688,7 @@ END GROUP
  .debug_frame   0x000000ac       0xbc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_frame   0x00000168      0x3e0 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_frame   0x00000548      0x3a8 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_frame   0x000008f0      0x158 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_frame   0x000008f0      0x158 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_frame   0x00000a48       0x78 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
  .debug_frame   0x00000ac0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
  .debug_frame   0x00000ae0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
@@ -711,7 +711,7 @@ END GROUP
                                 0x6c7 (size before relaxing)
  .debug_str     0x00000918      0x530 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
                                 0x74e (size before relaxing)
- .debug_str     0x00000e48      0x26b .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_str     0x00000e48      0x26b .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
                                 0x479 (size before relaxing)
  .debug_str     0x000010b3      0x121 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
                                 0x33f (size before relaxing)
@@ -722,7 +722,7 @@ END GROUP
  .debug_loc     0x00000118      0x14f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_loc     0x00000267      0x599 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_loc     0x00000800      0x9b5 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_loc     0x000011b5      0x7fc .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_loc     0x000011b5      0x7fc .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_loc     0x000019b1      0x21f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
 .debug_macinfo
@@ -735,7 +735,7 @@ END GROUP
  .debug_ranges  0x00000038       0x38 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .debug_ranges  0x00000070      0x170 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .debug_ranges  0x000001e0      0x128 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .debug_ranges  0x00000308       0x90 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .debug_ranges  0x00000308       0x90 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .debug_ranges  0x00000398       0x28 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
 .comment        0x00000000       0x6e
@@ -746,7 +746,7 @@ END GROUP
  .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
  .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLib.o)
  .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
- .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyFlash.o)
 
 .debug_weaknames
@@ -786,7 +786,7 @@ END GROUP
  .ARM.attributes
                 0x0000015a       0x31 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyLFClk.o)
  .ARM.attributes
-                0x0000018b       0x31 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_1.o)
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(Bootloader_0.o)
  .ARM.attributes
                 0x000001bc       0x21 .\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a(CyBootAsmGnu.o)
  .ARM.attributes

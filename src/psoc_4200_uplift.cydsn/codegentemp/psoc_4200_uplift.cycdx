@@ -11,7 +11,7 @@
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUTTON_DIR_UP" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUTTON_DIR_DOWN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+  <block name="PWM_FRONT_C" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -25,8 +25,8 @@
     <register name="PERIOD" address="0x40050154" bitWidth="32" desc="Period value" hidden="false" />
     <register name="PERIOD_BUF" address="0x40050158" bitWidth="32" desc="Period buffer value" hidden="false" />
   </block>
-  <block name="Bootloader_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+  <block name="Bootloader_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_BACK_C" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
