@@ -1,2 +1,2 @@
-# ECE Spring 2025 Project Template 
+# Uplift's Firmware Repository - Hardware
 
