@@ -1,6 +1,6 @@
 // ======================================================================
 // psoc_4200_uplift.v generated from TopDesign.cysch
-// 02/11/2025 at 21:40
+// 02/11/2025 at 22:44
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -726,8 +726,8 @@ module top ;
           wire  Net_6;
           wire  Net_5;
           wire  Net_4;
-          wire  Net_35;
           wire  Net_45;
+          wire  Net_35;
           wire  Net_34;
 
 	wire [0:0] tmpOE__PWM_BACK_net;

@@ -23,6 +23,8 @@ third column has the conditions for how a transition can occur from IDLE to the 
 
 State       |      Transition to IDLE      |      Transition away from IDLE
 ----------------------------------------------------------------------------------------------------------------
+SLEEP       |  When any button is clicked  |    After a certain amount of time
+
 RAISE_LEGS  |    Buttons not clicked       |    Left top and right top buttons clicked and we are in idle
 
 LOWER_LEGS  |    Buttons not clicked       |    Left top and right bottom buttons clicked and we are in idle
