@@ -75,36 +75,38 @@ int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     
-    switch (currentState) {
-        case SLEEP:
-            handle_sleep_state();
-            break;
+    while(1) {
+        
+        switch (currentState) {
+            case SLEEP:
+                handle_sleep_state();
+                break;
 
-        case IDLE:
-            handle_idle_state();
-            break;
-            
-        case RAISE_LEGS:
-            handle_raise_legs_state();
-            break;
-            
-        case LOWER_LEGS:
-            handle_lower_legs_state();
-            break;
-            
-        case RAISE_SEAT:
-            handle_raise_seat_state();
-            break;
-            
-        case LOWER_SEAT:
-            handle_lower_seat_state();
-            break;
-            
-        case PANIC:
-            handle_panic_state();
-            break;
+            case IDLE:
+                handle_idle_state();
+                break;
+                
+            case RAISE_LEGS:
+                handle_raise_legs_state();
+                break;
+                
+            case LOWER_LEGS:
+                handle_lower_legs_state();
+                break;
+                
+            case RAISE_SEAT:
+                handle_raise_seat_state();
+                break;
+                
+            case LOWER_SEAT:
+                handle_lower_seat_state();
+                break;
+                
+            case PANIC:
+                handle_panic_state();
+                break;
+        }
     }
-    
     
     
     

@@ -82,6 +82,12 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_sda</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_0</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_1</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_2</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_3</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_BACK</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_BACK_C</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_FRONT</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_FRONT_C</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000">
@@ -215,6 +221,12 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_BOOT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_INT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_MASTER.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_SCB_IRQ.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_SCBCLK.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_scl.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_scl_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
