@@ -38,9 +38,14 @@ PANIC       |    IMU values read normal    |    IMU trigger (walker fell over)
 */
 
 // This is the enumerate type that defines possible states of the walker
-typedef enum { IDLE, RAISE_LEGS, LOWER_LEGS, RAISE_SEAT, LOWER_SEAT, PANIC } State;
+typedef enum { SLEEP, IDLE, RAISE_LEGS, LOWER_LEGS, RAISE_SEAT, LOWER_SEAT, PANIC } State;
 
 State currentState = IDLE;
+
+// watchdog timer or real time clock for sleep state to wake it back up based on watchdog interrupts or go to sleep after an amount of time
+void handle_sleep_state() {
+
+}
 
 void handle_idle_state() {
 
@@ -71,6 +76,10 @@ int main(void)
     CyGlobalIntEnable; /* Enable global interrupts. */
     
     switch (currentState) {
+        case SLEEP:
+            handle_sleep_state();
+            break;
+
         case IDLE:
             handle_idle_state();
             break;

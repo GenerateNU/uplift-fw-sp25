@@ -17,17 +17,18 @@
       <Data key="8b9e6fdc-ee39-45a9-912d-288ede9abc6a" value="PWM_BACK_RIGHT" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="I2C_SDA" />
       <Data key="9d9ddb8c-9fa9-42cc-b750-bfa8b45dfdde" value="DIR_FRONT_LEFT" />
-      <Data key="37b8dd2b-e7f8-4b5c-949f-8399eb11eb26" value="DIR_BACK_LEFT" />
+      <Data key="37b8dd2b-e7f8-4b5c-949f-8399eb11eb26" value="DIR_REAR_LEFT" />
       <Data key="93eed29e-36c3-43ea-9d2d-93ad346df2d0" value="LED_2" />
-      <Data key="94d1cad9-34cd-4fdc-aa5c-ce2d489a11aa" value="PWM_BACK" />
+      <Data key="94d1cad9-34cd-4fdc-aa5c-ce2d489a11aa" value="PWM_REAR" />
       <Data key="531da474-027b-494c-8c76-05e4dd96b892" value="BUTTON_TILT_EN" />
       <Data key="941c61e4-90b9-4766-b32c-f3d6fdc2b7ea" value="BUTTON_DIR_UP" />
       <Data key="8256e678-dfbc-4ed3-9cdd-2134f567c900" value="BUTTON_MOTOR_EN" />
       <Data key="76354ef3-5888-407c-a394-3f427203574b" value="PWM_BACK_LEFT" />
+      <Data key="39182708-5ee9-430e-9635-33a6f17abb0e" value="ENABLE_REAR_MOTORS" />
       <Data key="ba8b71bc-3a59-46d5-b7f5-a456b85a3c32" value="DIR_FRONT_RIGHT" />
-      <Data key="bb61b3df-2dd7-453d-b307-c1e02fce1e81" value="ENABLE_MOTORS" />
+      <Data key="bb61b3df-2dd7-453d-b307-c1e02fce1e81" value="ENABLE_FRONT_MOTORS" />
       <Data key="c38dbb7b-f964-4ed8-a393-996685ea0154" value="LED_1" />
-      <Data key="dd4571ca-6ece-4e36-a524-7e4241a93bb7" value="DIR_BACK_RIGHT" />
+      <Data key="dd4571ca-6ece-4e36-a524-7e4241a93bb7" value="DIR_REAR_RIGHT" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="PWM_FRONT" />
       <Data key="eb681b5d-7ca7-4a8e-9a35-e1972d237c9b" value="LED_3" />
       <Data key="f530cdda-c432-43c3-98af-a446a7dc5ac0" value="I2C_SCL" />
@@ -1299,6 +1300,11 @@
     <Group key="76354ef3-5888-407c-a394-3f427203574b">
       <Group key="0">
         <Data key="Port Format" value="2,6" />
+      </Group>
+    </Group>
+    <Group key="39182708-5ee9-430e-9635-33a6f17abb0e">
+      <Group key="0">
+        <Data key="Port Format" value="1,5" />
       </Group>
     </Group>
     <Group key="ba8b71bc-3a59-46d5-b7f5-a456b85a3c32">
