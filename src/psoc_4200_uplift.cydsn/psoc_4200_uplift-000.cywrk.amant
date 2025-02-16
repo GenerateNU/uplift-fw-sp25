@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4">
 <ExpandedNodeIds>
 <v>psoc_4200_uplift-000</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift</v>
@@ -37,8 +37,6 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Source Files</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Source Files\main.c</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_SCB_IRQ</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>psoc_4200_uplift-000</v>
@@ -59,35 +57,6 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Source Files\main.c</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\Bootloader_0</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUTTON_DIR_DOWN</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUTTON_DIR_UP</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUTTON_MOTOR_EN</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUTTON_TILT_EN</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\Clock_1</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\cy_boot</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\cy_lfclk</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\DIR_BACK_LEFT</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\DIR_BACK_RIGHT</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\DIR_FRONT_LEFT</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\DIR_FRONT_RIGHT</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\ENABLE_MOTORS</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_SCB_IRQ</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_SCB_IRQ\I2C_0_SCB_IRQ.c</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_SCB_IRQ\I2C_0_SCB_IRQ.h</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_SCBCLK</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_scl</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\I2C_0_sda</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_0</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_1</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_2</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\LED_3</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_BACK</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_BACK_C</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_FRONT</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_FRONT_C</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000">
@@ -132,16 +101,18 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_LEFT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_LEFT_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_RIGHT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_RIGHT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_MOTORS.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_MOTORS_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_FRONT_MOTORS.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_FRONT_MOTORS_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_REAR_MOTORS.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_REAR_MOTORS_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_BOOT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C.lst</v>
@@ -155,6 +126,7 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_scl_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_sda.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_sda_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\isr_1.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_0.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_0_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
@@ -164,14 +136,28 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_BACK.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_BACK_C.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_BACK_C_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_BACK_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_FRONT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_FRONT_C.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_FRONT_C_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_FRONT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_REAR.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_REAR_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\SWITCH_PF.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\SWITCH_PF_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_BOOT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_rx.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_rx_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_SCBCLK.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_SPI_UART.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_SPI_UART_INT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_tx.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_tx_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_UART.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_0_UART_BOOT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.elf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.hex</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.map</v>
@@ -206,27 +192,21 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_LEFT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_LEFT_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_RIGHT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_BACK_RIGHT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_MOTORS.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_MOTORS_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_FRONT_MOTORS.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_FRONT_MOTORS_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_REAR_MOTORS.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_REAR_MOTORS_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_BOOT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_BOOT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_INT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_I2C_MASTER.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_SCB_IRQ.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_SCBCLK.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_scl.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_0_scl_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -245,9 +225,13 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\System Reference Guides\cy_lfclk_v1_20</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Bootloader_v1_60.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_clock_v2_20.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\cy_isr_v1_70.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_pins_v2_20</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Gnd_v1_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SwitchSPST_v1_0.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\TCPWM_P4_v2_10</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 </ExpandedNodeIds>
@@ -261,9 +245,13 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\System Reference Guides\cy_lfclk_v1_20</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Bootloader_v1_60.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_clock_v2_20.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\cy_isr_v1_70.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_pins_v2_20</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Gnd_v1_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\SwitchSPST_v1_0.pdf</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\TCPWM_P4_v2_10</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 </VisibleNodeIds>
@@ -280,6 +268,8 @@
 <name v=".\psoc_4200_uplift.cydwr" />
 <name v=".\TopDesign\TopDesign.cysch" />
 <name v=".\i2c_custom.h" />
+<name v=".\Generated_Source\PSoC4\I2C_0.c" />
+<name v=".\Generated_Source\PSoC4\I2C_0_I2C_MASTER.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -287,7 +277,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="988, 787" SelectedTabbedMdiWindow="123c9b0f-5167-408b-a5c7-0ccf7d955b69"><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\main.c" Guid="d3ba908c-519c-4a35-b0f6-49116cc612a5" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\cyapicallbacks.h" Guid="28812bb7-8400-4a19-a245-354019e74ba9" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cydwr" Guid="78002a26-2323-4a04-8383-ce58c044a357" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\TopDesign\TopDesign.cysch" Guid="123c9b0f-5167-408b-a5c7-0ccf7d955b69" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\i2c_custom.h" Guid="374d3bdf-3148-468b-a9d9-0624408bf841" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1369, 644" SelectedTabbedMdiWindow="d3ba908c-519c-4a35-b0f6-49116cc612a5"><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\main.c" Guid="d3ba908c-519c-4a35-b0f6-49116cc612a5" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\cyapicallbacks.h" Guid="28812bb7-8400-4a19-a245-354019e74ba9" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cydwr" Guid="78002a26-2323-4a04-8383-ce58c044a357" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\TopDesign\TopDesign.cysch" Guid="123c9b0f-5167-408b-a5c7-0ccf7d955b69" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\i2c_custom.h" Guid="374d3bdf-3148-468b-a9d9-0624408bf841" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0.c" Guid="7f6841ae-c103-4cc6-bdb6-87727b6c533b" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_I2C_MASTER.c" Guid="ead6816a-a85e-4b60-8a9d-51d349eaee14" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

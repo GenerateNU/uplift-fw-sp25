@@ -86,10 +86,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_BACK.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_BACK.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_BACK_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_BACK_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_aliases.h</File>
@@ -117,18 +113,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_FRONT_RIGHT.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_FRONT_RIGHT_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_FRONT_RIGHT_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_LEFT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_LEFT.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_LEFT_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_LEFT_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_RIGHT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_RIGHT.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_RIGHT_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_BACK_RIGHT_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_MOTORS.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_MOTORS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_MOTORS_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_MOTORS_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_0.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_0.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_0_aliases.h</File>
@@ -182,6 +166,55 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_C.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_C.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_C_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_REAR.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_REAR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_REAR_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_REAR_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_LEFT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_LEFT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_LEFT_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_LEFT_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_RIGHT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_RIGHT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_RIGHT_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DIR_REAR_RIGHT_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_FRONT_MOTORS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_FRONT_MOTORS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_FRONT_MOTORS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_FRONT_MOTORS_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SPI_UART.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SPI_UART.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SPI_UART_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_UART.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_UART_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_PINS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SPI_UART_PVT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_PVT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_BOOT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SWITCH_PF.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SWITCH_PF.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SWITCH_PF_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SWITCH_PF_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_REAR_MOTORS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_REAR_MOTORS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_REAR_MOTORS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ENABLE_REAR_MOTORS_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SCBCLK.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_SCBCLK.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_tx.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_tx.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_tx_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_tx_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_rx.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_rx.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_rx_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_0_rx_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
