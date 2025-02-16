@@ -3,7 +3,8 @@
 * Version 2.20
 *
 * Description:
-*  This file contains Pin function prototypes and register defines
+*  This file contains Pin function prototypes and register defines. 
+*  This file contains function prototypes and register definitions for the PWM_BACK component.
 *
 ********************************************************************************
 * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
@@ -19,6 +20,7 @@
 #include "cyfitter.h"
 #include "PWM_BACK_aliases.h"
 
+void PWM_BACK_Init(void);
 
 /***************************************
 *     Data Struct Definitions

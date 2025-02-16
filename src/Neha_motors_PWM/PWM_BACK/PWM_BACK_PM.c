@@ -61,6 +61,14 @@ void PWM_BACK_Sleep(void)
 }
 
 
+// Motor resumes previous state after sleep
+void PWM_BACK_Wakeup(void) {
+    PWM_BACK_Start();
+    // Restore PWM compare value if needed
+}
+
+
+
 /*******************************************************************************
 * Function Name: PWM_BACK_Wakeup
 ****************************************************************************//**

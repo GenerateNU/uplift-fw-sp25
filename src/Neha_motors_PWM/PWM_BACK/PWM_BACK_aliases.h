@@ -4,7 +4,8 @@
 *
 * Description:
 *  This file contains the Alias definitions for Per-Pin APIs in cypins.h. 
-*  Information on using these APIs can be found in the System Reference Guide.
+*  Information on using these APIs can be found in the System Reference Guide. 
+*  This file contains predefined constants for referencing PWM pins.
 *
 * Note:
 *

@@ -38,7 +38,13 @@
         } while (0)
     #endif
 #endif
-  
+
+
+// PWM initialization
+void PWM_BACK_Init(void) {
+    PWM_BACK_Start();
+}
+
 
 #if defined(PWM_BACK__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************

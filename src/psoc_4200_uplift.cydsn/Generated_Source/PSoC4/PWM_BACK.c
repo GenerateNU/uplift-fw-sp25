@@ -3,7 +3,8 @@
 * Version 2.20
 *
 * Description:
-*  This file contains API to enable firmware control of a Pins component.
+*  This file contains API to enable firmware control of a Pins component. 
+*  This file handles low-level PWM configuration. The existing functions should already allow PWM to be started, stopped, and modified dynamically.
 *
 ********************************************************************************
 * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
@@ -37,7 +38,13 @@
         } while (0)
     #endif
 #endif
-  
+
+
+// PWM initialization
+void PWM_BACK_Init(void) {
+    PWM_BACK_Start();
+}
+
 
 #if defined(PWM_BACK__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
