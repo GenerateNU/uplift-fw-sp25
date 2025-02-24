@@ -1,4 +1,4 @@
-name: Generate Hardware CI/CD
+name: Uplift CI/CD
 
 on:
     push:
