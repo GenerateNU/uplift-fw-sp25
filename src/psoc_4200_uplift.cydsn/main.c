@@ -55,6 +55,21 @@ PANIC       |    IMU values read normal    |    IMU trigger (walker fell over)
 
 */
 
+/*
+TODO:
+1. test buttons getting input
+2. test buttons activating motors
+3. test changing of state with buttons and motors
+4. test two motors using the same PWM signal
+5. get IMU communicating
+
+
+
+*/
+
+// interrupts for current sense 1, 2, 3, 4
+//  - when these write high (3.3v), shut down the associated motors
+
 // This is the enumerate type that defines possible states of the walker
 typedef enum { SLEEP, IDLE, RAISE_LEGS, LOWER_LEGS, RAISE_SEAT, LOWER_SEAT, PANIC } State;
 
@@ -133,7 +148,8 @@ void handle_idle_state(State *current_state) {
     // TODO: add a timer here (real time clock) to transition to sleep state after a certain period of time
     //  - Before transitioning to another state, reset the clock
     //  - also only start the clock when we enter idle state
-    //  - if the clock reads over a specific time, transition to sleep
+    //  -if the clock reads over a specific time, transition to sleep
+
     
     if (all_legs_button && motors_up_button) {
         *current_state = RAISE_LEGS;
@@ -157,18 +173,30 @@ void handle_raise_legs_state(State *current_state) {
     Args:
         current_state (State *) - pointer to the current state, can be modified directly for state transitioning
     */
-    uint8 all_legs_button = BUTTON_MOTOR_EN_Read();
-    uint8 motors_down_button = BUTTON_DIR_UP_Read(); 
     
-    if (!all_legs_button && !motors_down_button) {
+    uint8 legs_enable_button = BUTTON_MOTOR_EN_Read();
+    uint8 raise_legs_button = BUTTON_DIR_UP_Read();
+    
+    
+    if (legs_enable_button==0 && raise_legs_button==0) {
+        PWM_REAR_0_Stop();
+        PWM_FRONT_0_Stop();
         *current_state = IDLE;
     }
+    else {
+        ENABLE_FRONT_MOTORS_Write(1);
+        ENABLE_REAR_MOTORS_Write(1);
     
-    ENABLE_FRONT_MOTORS_Write(1);
-    ENABLE_REAR_MOTORS_Write(1);
+        PWM_REAR_0_Start();
+        PWM_FRONT_0_Start();
     
-    // TODO: Add motor functionality for raising all legs here
-    //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
+        //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
+        DIR_FRONT_LEFT_Write(1);
+        DIR_FRONT_RIGHT_Write(1);
+        DIR_REAR_LEFT_Write(1);
+        DIR_REAR_RIGHT_Write(1);
+    }
+    
 }
 
 void handle_lower_legs_state(State *current_state) {
@@ -179,18 +207,28 @@ void handle_lower_legs_state(State *current_state) {
     Args:
         current_state (State *) - pointer to the current state, can be modified directly for state transitioning
     */
-    uint8 all_legs_button = BUTTON_MOTOR_EN_Read();
-    uint8 motors_down_button = BUTTON_DIR_DOWN_Read();
+    uint8 legs_enable_button = BUTTON_MOTOR_EN_Read();
+    uint8 lower_legs_button = BUTTON_DIR_DOWN_Read();
     
-    if (!all_legs_button && !motors_down_button) {
+    if (legs_enable_button==0 && lower_legs_button==0) {
+        PWM_REAR_0_Stop();
+        PWM_FRONT_0_Stop();
         *current_state = IDLE;
     }
+    else {
+        ENABLE_FRONT_MOTORS_Write(1);
+        ENABLE_REAR_MOTORS_Write(1);
     
-    ENABLE_FRONT_MOTORS_Write(1);
-    ENABLE_REAR_MOTORS_Write(1);
+        PWM_REAR_0_Start();
+        PWM_FRONT_0_Start();
     
-    // TODO: Add motor functionality here for lowering all legs here
-    //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
+        //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
+        DIR_FRONT_LEFT_Write(0);
+        DIR_FRONT_RIGHT_Write(0);
+        DIR_REAR_LEFT_Write(0);
+        DIR_REAR_RIGHT_Write(0);
+    }
+    
 }
 
 void handle_raise_seat_state(State *current_state) {
@@ -200,21 +238,25 @@ void handle_raise_seat_state(State *current_state) {
     Args:
         current_state (State *) - pointer to the current state, can be modified directly for state transitioning
     */
-    uint8 tilt_seat_button = BUTTON_TILT_EN_Read();
+    uint8 enable_tilt_seat_button = BUTTON_TILT_EN_Read();
     // TODO: Check to make sure that the seat is tilted down when the rear legs raise up
     uint8 raise_rear_legs_button = BUTTON_DIR_UP_Read();
     
-    if (!tilt_seat_button && !raise_rear_legs_button) {
+    if (enable_tilt_seat_button==0 && raise_rear_legs_button==0) {
+        PWM_REAR_0_Stop();
         *current_state = IDLE;
     }
+    else {
+        ENABLE_FRONT_MOTORS_Write(0);
+        ENABLE_REAR_MOTORS_Write(1);
     
-    ENABLE_FRONT_MOTORS_Write(0);
-    ENABLE_REAR_MOTORS_Write(1);
+        PWM_REAR_0_Start();
     
-    // TODO: Add motor functionality here for lowering all legs here
-    //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
-    //  - for raising just the rear legs, you only need to send a pwm signal through the rear pwm pin and only set 
-    //    directions for those motors
+        //DIR_FRONT_LEFT_Write(0);
+        //DIR_FRONT_RIGHT_Write(0);
+        DIR_REAR_LEFT_Write(1);
+        DIR_REAR_RIGHT_Write(1);
+    }
 }
 
 void handle_lower_seat_state(State *current_state) {
@@ -224,21 +266,25 @@ void handle_lower_seat_state(State *current_state) {
     Args:
         current_state (State *) - pointer to the current state, can be modified directly for state transitioning
     */
-    uint8 tilt_seat_button = BUTTON_TILT_EN_Read();
+    uint8 enable_tilt_seat_button = BUTTON_TILT_EN_Read();
     // TODO: Check to make sure that the seat is tilted up when the rear legs lower
     uint8 raise_rear_legs_button = BUTTON_DIR_UP_Read();
     
-    if (!tilt_seat_button && !raise_rear_legs_button) {
+    if (enable_tilt_seat_button==0 && raise_rear_legs_button==0) {
+        PWM_REAR_0_Stop();
         *current_state = IDLE;
     }
-    
-    ENABLE_FRONT_MOTORS_Write(0);
-    ENABLE_REAR_MOTORS_Write(1);
-    
-    // TODO: Add motor functionality here for lowering all legs here
-    //  - I think this should be executing in a loop that is broken when either enabling buttons are unclicked
-    //  - for lowering just the rear legs, you only need to send a pwm signal through the rear pwm pin and only set 
-    //    directions for those motors
+    else {
+        ENABLE_FRONT_MOTORS_Write(0);
+        ENABLE_REAR_MOTORS_Write(1);
+
+        PWM_REAR_0_Start();
+        
+        //DIR_FRONT_LEFT_Write(1);
+        //DIR_FRONT_RIGHT_Write(1);
+        DIR_REAR_LEFT_Write(0);
+        DIR_REAR_RIGHT_Write(0);
+    }
 }
 
 void handle_panic_state(State *current_state) {
@@ -252,10 +298,16 @@ void handle_panic_state(State *current_state) {
     bool are_you_still_on_the_ground = check_imu(current_state);
     
     if (!are_you_still_on_the_ground) {
+        BUZZER_PWM_0_Stop();
         *current_state = IDLE;
+    }
+    else {
+        BUZZER_PWM_0_Start();
     }
 }
 
+
+// Do we need this?? -> I2C_0_I2CMasterSendStart
 void are_you_there_imu() {
     uint32 errS;
     uint8 rdBuff[6];
@@ -283,10 +335,10 @@ void are_you_there_imu() {
     //}
     
     if (errS == I2C_0_I2C_MSTR_NO_ERROR) {
-        LED_0_Write(0);
+        LED_1_Write(0);
     } else {
         // Error occurred
-        LED_0_Write(~LED_0_Read());
+        LED_1_Write(~LED_1_Read());
         CyDelay(500);
     }
 }
@@ -297,19 +349,25 @@ int main(void)
     // I2C_0_Init();
     // I2C_0_Enable();
     
-    CyGlobalIntEnable; /* Enable global interrupts. */
+    //are_you_there_imu();
     
-    while(1) {  
+    // Motor activation
+    CyGlobalIntEnable; /* Enable global interrupts. */
+
+    
+    while(1) {
+        //DIR_REAR_LEFT_Write(~DIR_REAR_LEFT_Read());
+    
         switch (current_state) {
             case SLEEP:
                 handle_sleep_state();
                 break;
 
             case IDLE:
-                for (int i = 0; i < 5; i++) {
-                    LED_0_Write(~LED_0_Read());
-                    CyDelay(500);
-                }
+                //for (int i = 0; i < 5; i++) {
+                //    LED_1_Write(~LED_1_Read());
+                //    CyDelay(500);
+                //}
                 //are_you_there_imu();
                 handle_idle_state(&current_state);
                 break;
@@ -336,7 +394,7 @@ int main(void)
         }
         
     }
-    
+
 }
 
 /* [] END OF FILE */
