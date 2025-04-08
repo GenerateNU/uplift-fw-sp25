@@ -1,6 +1,6 @@
 // ======================================================================
 // psoc_4200_uplift.v generated from TopDesign.cysch
-// 04/03/2025 at 19:25
+// 04/07/2025 at 20:42
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -922,10 +922,14 @@ module top ;
           wire  Net_6;
           wire  Net_5;
           wire  Net_4;
+          wire  Net_7618;
+          wire  Net_7617;
+          wire  Net_7616;
+          wire  Net_7615;
+          wire  Net_607;
           wire  Net_520;
           wire  Net_581;
           wire  Net_594;
-          wire  Net_607;
           wire  Net_34;
           wire  Net_1020;
           wire  Net_45;
@@ -2203,7 +2207,7 @@ module top ;
 
 
 	cy_isr_v1_0
-		#(.int_type(2'b10))
+		#(.int_type(2'b00))
 		CURRENT_SENSE_2_INT
 		 (.int_signal(Net_581));
 
@@ -2285,14 +2289,14 @@ module top ;
 
 
 	cy_isr_v1_0
-		#(.int_type(2'b10))
+		#(.int_type(2'b00))
 		CURRENT_SENSE_4_INT
 		 (.int_signal(Net_607));
 
 
 
 	cy_isr_v1_0
-		#(.int_type(2'b10))
+		#(.int_type(2'b00))
 		CURRENT_SENSE_3_INT
 		 (.int_signal(Net_594));
 
@@ -2390,18 +2394,17 @@ module top ;
 	assign tmpOE__IMU_RST_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__LIMIT_SWITCH_1_net;
-	wire [0:0] tmpFB_0__LIMIT_SWITCH_1_net;
 	wire [0:0] tmpIO_0__LIMIT_SWITCH_1_net;
 	wire [0:0] tmpINTERRUPT_0__LIMIT_SWITCH_1_net;
 	electrical [0:0] tmpSIOVREF__LIMIT_SWITCH_1_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("2467a4f8-c521-4a1c-bbfc-6537273a2ffb"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),
 		  .input_clk_en(0),
-		  .input_sync(1'b1),
+		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
 		  .intr_mode(2'b00),
 		  .invert_in_clock(0),
@@ -2428,7 +2431,7 @@ module top ;
 		  .pa_out_clock_en(-1),
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
-		  .pin_mode("O"),
+		  .pin_mode("I"),
 		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
@@ -2442,7 +2445,7 @@ module top ;
 		  .slew_rate(1'b0),
 		  .spanning(0),
 		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
+		  .vtrip(2'b00),
 		  .width(1),
 		  .ovt_hyst_trim(1'b0),
 		  .ovt_needed(1'b0),
@@ -2451,7 +2454,7 @@ module top ;
 		LIMIT_SWITCH_1
 		 (.oe(tmpOE__LIMIT_SWITCH_1_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__LIMIT_SWITCH_1_net[0:0]}),
+		  .fb({Net_7615}),
 		  .io({tmpIO_0__LIMIT_SWITCH_1_net[0:0]}),
 		  .siovref(tmpSIOVREF__LIMIT_SWITCH_1_net),
 		  .interrupt({tmpINTERRUPT_0__LIMIT_SWITCH_1_net[0:0]}),
@@ -2540,18 +2543,17 @@ module top ;
 	assign tmpOE__BUZZER_EN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__LIMIT_SWITCH_4_net;
-	wire [0:0] tmpFB_0__LIMIT_SWITCH_4_net;
 	wire [0:0] tmpIO_0__LIMIT_SWITCH_4_net;
 	wire [0:0] tmpINTERRUPT_0__LIMIT_SWITCH_4_net;
 	electrical [0:0] tmpSIOVREF__LIMIT_SWITCH_4_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("851c207f-ca87-46ab-8e4f-5fbd6055d97d"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),
 		  .input_clk_en(0),
-		  .input_sync(1'b1),
+		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
 		  .intr_mode(2'b00),
 		  .invert_in_clock(0),
@@ -2578,7 +2580,7 @@ module top ;
 		  .pa_out_clock_en(-1),
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
-		  .pin_mode("O"),
+		  .pin_mode("I"),
 		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
@@ -2592,7 +2594,7 @@ module top ;
 		  .slew_rate(1'b0),
 		  .spanning(0),
 		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
+		  .vtrip(2'b00),
 		  .width(1),
 		  .ovt_hyst_trim(1'b0),
 		  .ovt_needed(1'b0),
@@ -2601,7 +2603,7 @@ module top ;
 		LIMIT_SWITCH_4
 		 (.oe(tmpOE__LIMIT_SWITCH_4_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__LIMIT_SWITCH_4_net[0:0]}),
+		  .fb({Net_7618}),
 		  .io({tmpIO_0__LIMIT_SWITCH_4_net[0:0]}),
 		  .siovref(tmpSIOVREF__LIMIT_SWITCH_4_net),
 		  .interrupt({tmpINTERRUPT_0__LIMIT_SWITCH_4_net[0:0]}),
@@ -2615,18 +2617,17 @@ module top ;
 	assign tmpOE__LIMIT_SWITCH_4_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__LIMIT_SWITCH_3_net;
-	wire [0:0] tmpFB_0__LIMIT_SWITCH_3_net;
 	wire [0:0] tmpIO_0__LIMIT_SWITCH_3_net;
 	wire [0:0] tmpINTERRUPT_0__LIMIT_SWITCH_3_net;
 	electrical [0:0] tmpSIOVREF__LIMIT_SWITCH_3_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("c4c247bb-38b3-4452-b50c-a3e2693de198"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),
 		  .input_clk_en(0),
-		  .input_sync(1'b1),
+		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
 		  .intr_mode(2'b00),
 		  .invert_in_clock(0),
@@ -2653,7 +2654,7 @@ module top ;
 		  .pa_out_clock_en(-1),
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
-		  .pin_mode("O"),
+		  .pin_mode("I"),
 		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
@@ -2667,7 +2668,7 @@ module top ;
 		  .slew_rate(1'b0),
 		  .spanning(0),
 		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
+		  .vtrip(2'b00),
 		  .width(1),
 		  .ovt_hyst_trim(1'b0),
 		  .ovt_needed(1'b0),
@@ -2676,7 +2677,7 @@ module top ;
 		LIMIT_SWITCH_3
 		 (.oe(tmpOE__LIMIT_SWITCH_3_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__LIMIT_SWITCH_3_net[0:0]}),
+		  .fb({Net_7617}),
 		  .io({tmpIO_0__LIMIT_SWITCH_3_net[0:0]}),
 		  .siovref(tmpSIOVREF__LIMIT_SWITCH_3_net),
 		  .interrupt({tmpINTERRUPT_0__LIMIT_SWITCH_3_net[0:0]}),
@@ -2690,18 +2691,17 @@ module top ;
 	assign tmpOE__LIMIT_SWITCH_3_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__LIMIT_SWITCH_2_net;
-	wire [0:0] tmpFB_0__LIMIT_SWITCH_2_net;
 	wire [0:0] tmpIO_0__LIMIT_SWITCH_2_net;
 	wire [0:0] tmpINTERRUPT_0__LIMIT_SWITCH_2_net;
 	electrical [0:0] tmpSIOVREF__LIMIT_SWITCH_2_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("3aeef921-6a7b-40a3-bad9-aacfac732e51"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b001),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),
 		  .input_clk_en(0),
-		  .input_sync(1'b1),
+		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
 		  .intr_mode(2'b00),
 		  .invert_in_clock(0),
@@ -2728,7 +2728,7 @@ module top ;
 		  .pa_out_clock_en(-1),
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
-		  .pin_mode("O"),
+		  .pin_mode("I"),
 		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
@@ -2742,7 +2742,7 @@ module top ;
 		  .slew_rate(1'b0),
 		  .spanning(0),
 		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
+		  .vtrip(2'b00),
 		  .width(1),
 		  .ovt_hyst_trim(1'b0),
 		  .ovt_needed(1'b0),
@@ -2751,7 +2751,7 @@ module top ;
 		LIMIT_SWITCH_2
 		 (.oe(tmpOE__LIMIT_SWITCH_2_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__LIMIT_SWITCH_2_net[0:0]}),
+		  .fb({Net_7616}),
 		  .io({tmpIO_0__LIMIT_SWITCH_2_net[0:0]}),
 		  .siovref(tmpSIOVREF__LIMIT_SWITCH_2_net),
 		  .interrupt({tmpINTERRUPT_0__LIMIT_SWITCH_2_net[0:0]}),
@@ -2766,7 +2766,7 @@ module top ;
 
 
 	cy_isr_v1_0
-		#(.int_type(2'b10))
+		#(.int_type(2'b00))
 		CURRENT_SENSE_1_INT
 		 (.int_signal(Net_520));
 
@@ -3441,6 +3441,34 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__CURRENT_SENSE_4_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b00))
+		LIMIT_SWITCH_1_INT
+		 (.int_signal(Net_7615));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b00))
+		LIMIT_SWITCH_2_INT
+		 (.int_signal(Net_7616));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b00))
+		LIMIT_SWITCH_3_INT
+		 (.int_signal(Net_7617));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b00))
+		LIMIT_SWITCH_4_INT
+		 (.int_signal(Net_7618));
+
 
 
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="LIMIT_SWITCH_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LIMIT_SWITCH_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LIMIT_SWITCH_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUZZER_PWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_1_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUZZER_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_3_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_4_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="GPIO_36" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PSOC_ALERT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="GPIO_13" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="IMU_RST" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_FRONT_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_capture_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -59,28 +59,28 @@
       </field>
     </register>
   </block>
-  <block name="LIMIT_SWITCH_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="IMU_RST" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUZZER_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_4_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_3_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_2_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_lfclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PSOC_ALERT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="GPIO_13" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="GPIO_36" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="GPIO_30" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ENABLE_REAR_MOTORS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LIMIT_SWITCH_1_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_3_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DIR_REAR_LEFT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DIR_FRONT_RIGHT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DIR_FRONT_LEFT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DIR_REAR_LEFT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ENABLE_FRONT_MOTORS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DIR_REAR_RIGHT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_FRONT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_REAR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="I2C_0" BASE="0x0" SIZE="0x0" desc="Serial Communication Block" visible="true" hidden="false">
     <block name="sclk_s_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="clock_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -421,6 +421,9 @@
       <field name="BREAK_DETECT" from="11" to="11" access="RW" resetVal="" desc="Logical and of corresponding request and mask bits" hidden="false" />
     </register>
   </block>
+  <block name="PWM_FRONT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_REAR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_REAR_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_capture_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -473,10 +476,6 @@
     </register>
   </block>
   <block name="Bootloader_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUTTON_DIR_UP" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUTTON_MOTOR_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUTTON_DIR_DOWN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_2_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUZZER_PWM_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_capture_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -528,10 +527,15 @@
       </field>
     </register>
   </block>
-  <block name="BUTTON_TILT_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CURRENT_SENSE_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LED_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUTTON_DIR_DOWN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUTTON_DIR_UP" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_4_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ENABLE_REAR_MOTORS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CURRENT_SENSE_2_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LED_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUTTON_MOTOR_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUTTON_TILT_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LED_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

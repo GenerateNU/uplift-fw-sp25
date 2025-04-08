@@ -316,12 +316,17 @@ void are_you_there_imu() {
     
     // when you give the write buffer function a register address, it does not treat it as a write operation
     // and instead as a regiter pointer update
-    I2C_0_I2CMasterWriteBuf(0x28, &euler_angles, 1, I2C_0_I2C_MODE_NO_STOP);
+    errS = I2C_0_I2CMasterWriteBuf(0x28 << 1, &euler_angles, 1, I2C_0_I2C_MODE_NO_STOP);
+    if (errS != I2C_0_I2C_MSTR_NO_ERROR) {
+        printf("WriteBuf error: %lu\n", errS);
+        return;
+    }
     while (!(I2C_0_mstrStatus & I2C_0_I2C_MSTAT_WR_CMPLT));
     
+    
     // waits for I2C communication to complete
-    while((I2C_0_mstrStatus & I2C_0_I2C_MSTAT_RD_CMPLT) == 0);
     errS = I2C_0_I2CMasterReadBuf(0x28, rdBuff, 6, I2C_0_I2C_MODE_REPEAT_START);
+    while((I2C_0_mstrStatus & I2C_0_I2C_MSTAT_RD_CMPLT) == 0);
     
     //UART_0_Start();
     
@@ -334,30 +339,134 @@ void are_you_there_imu() {
     //    LED_0_Write(~LED_0_Read());
     //}
     
-    if (errS == I2C_0_I2C_MSTR_NO_ERROR) {
-        LED_1_Write(0);
-    } else {
-        // Error occurred
-        LED_1_Write(~LED_1_Read());
-        CyDelay(500);
+    printf("%i\n", heading);
+}
+
+void scan_i2c_bus() {
+    uint8_t address;
+    uint8_t dummy = 0;
+    uint32_t status;
+
+    I2C_0_Start();
+
+    for (address = 1; address < 127; address++) {
+        // Try writing 0 bytes to each address, just to see if ACK is received
+        status = I2C_0_I2CMasterSendStart(address << 1, I2C_0_I2C_WRITE_XFER_MODE, 10);
+        
+        if (status == I2C_0_I2C_MSTR_NO_ERROR) {
+            LED_2_Write(1);
+            CyDelay(3000);
+            I2C_0_I2CMasterSendStop(10); // Important: end communication cleanly
+        } else {
+            I2C_0_I2CMasterSendStop(10); // Still clean up after NACK
+        }
+
+        CyDelay(10); // Small delay to avoid hammering the bus
+    }
+
+}
+
+CY_ISR(CURRENT_SENSE_1_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    CURRENT_SENSE_1_ClearInterrupt();
+}
+
+CY_ISR(CURRENT_SENSE_2_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    CURRENT_SENSE_2_ClearInterrupt();
+}
+
+CY_ISR(CURRENT_SENSE_3_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    CURRENT_SENSE_3_ClearInterrupt();
+}
+
+CY_ISR(CURRENT_SENSE_4_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    CURRENT_SENSE_4_ClearInterrupt();
+}
+
+
+CY_ISR(LIMIT_SWITCH_1_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    if (CURRENT_SENSE_1_Read() != 0) {
+        LIMIT_SWITCH_1_ClearInterrupt();
     }
 }
 
+CY_ISR(LIMIT_SWITCH_2_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    if (CURRENT_SENSE_2_Read() != 0) {
+        LIMIT_SWITCH_2_ClearInterrupt();
+    }
+}
+
+CY_ISR(LIMIT_SWITCH_3_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    if (CURRENT_SENSE_3_Read() != 0) {
+        LIMIT_SWITCH_3_ClearInterrupt();
+    }
+}
+
+CY_ISR(LIMIT_SWITCH_4_INT_HANDLER) {
+    ENABLE_FRONT_MOTORS_Write(0);
+    ENABLE_REAR_MOTORS_Write(0);
+    
+    // when interrupt is done, need to clear it. otherwise this runs over and over forever
+    if (CURRENT_SENSE_4_Read() != 0) {
+        LIMIT_SWITCH_4_ClearInterrupt();
+    }
+}
+
+
 int main(void)
 {
+    // Enable global interrupts
+    CyGlobalIntEnable;
+    
+    // 
+    CURRENT_SENSE_1_INT_StartEx(CURRENT_SENSE_1_INT_HANDLER);
+    CURRENT_SENSE_2_INT_StartEx(CURRENT_SENSE_2_INT_HANDLER);
+    CURRENT_SENSE_3_INT_StartEx(CURRENT_SENSE_3_INT_HANDLER);
+    CURRENT_SENSE_4_INT_StartEx(CURRENT_SENSE_4_INT_HANDLER);
+    
+    LIMIT_SWITCH_1_INT_StartEx(LIMIT_SWITCH_1_INT_HANDLER);
+    LIMIT_SWITCH_2_INT_StartEx(LIMIT_SWITCH_2_INT_HANDLER);
+    LIMIT_SWITCH_3_INT_StartEx(LIMIT_SWITCH_3_INT_HANDLER);
+    LIMIT_SWITCH_4_INT_StartEx(LIMIT_SWITCH_4_INT_HANDLER);
+    
     State current_state = IDLE;
-    // I2C_0_Init();
-    // I2C_0_Enable();
+    I2C_0_Init();
+    I2C_0_Enable();
     
-    //are_you_there_imu();
-    
-    // Motor activation
-    CyGlobalIntEnable; /* Enable global interrupts. */
+    LED_2_Write(0);
 
     
     while(1) {
-        //DIR_REAR_LEFT_Write(~DIR_REAR_LEFT_Read());
+        scan_i2c_bus();
     
+        /*
         switch (current_state) {
             case SLEEP:
                 handle_sleep_state();
@@ -392,6 +501,7 @@ int main(void)
                 handle_panic_state(&current_state);
                 break;
         }
+        */
         
     }
 

@@ -246,12 +246,16 @@
 <dep name=".\Generated_Source\PSoC4\LED_4.h" />
 <dep name=".\Generated_Source\PSoC4\LED_4_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PSOC_ALERT.h" />
 <dep name=".\Generated_Source\PSoC4\PSOC_ALERT_aliases.h" />
@@ -337,12 +341,16 @@
 <file name=".\Generated_Source\PSoC4\LED_4.h" />
 <file name=".\Generated_Source\PSoC4\LED_4_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1.h" />
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2.h" />
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3.h" />
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4.h" />
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h" />
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_aliases.h" />
 <file name=".\Generated_Source\PSoC4\PSOC_ALERT.h" />
 <file name=".\Generated_Source\PSoC4\PSOC_ALERT_aliases.h" />
@@ -1046,6 +1054,17 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_1_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.c" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_1_PM.o">
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_PM.c" />
@@ -1066,6 +1085,17 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_2_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.c" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_2_PM.o">
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_PM.c" />
@@ -1086,6 +1116,17 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_3_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.c" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_3_PM.o">
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_PM.c" />
@@ -1106,6 +1147,17 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_4_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.c" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_4_PM.o">
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_PM.c" />
@@ -1336,12 +1388,16 @@
 <dep name=".\Generated_Source\PSoC4\LED_4.h" />
 <dep name=".\Generated_Source\PSoC4\LED_4_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_2_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_3_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4.h" />
+<dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h" />
 <dep name=".\Generated_Source\PSoC4\LIMIT_SWITCH_4_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PSOC_ALERT.h" />
 <dep name=".\Generated_Source\PSoC4\PSOC_ALERT_aliases.h" />
@@ -2027,6 +2083,10 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\BUZZER_PWM_0_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_0.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_0_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_1_INT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_2_INT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_3_INT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_4_INT.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -2178,6 +2238,10 @@
 <name_val_pair name="Generated_Source\PSoC4\BUZZER_PWM_0_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\PWM_FRONT_0.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\PWM_FRONT_0_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\amant\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj -d CY8C4245AXI-483 -s C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -2709,6 +2773,14 @@
 <v>Generated_Source\PSoC4\PWM_FRONT_0.c</v>
 <v>Generated_Source\PSoC4\PWM_FRONT_0.h</v>
 <v>Generated_Source\PSoC4\PWM_FRONT_0_PM.c</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.c</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.c</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.c</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.c</v>
+<v>Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -2718,7 +2790,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="133881963604770430" />
+<deps_time v="133885465579136623" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -2728,7 +2800,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133881963774631298" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133885465722730594" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

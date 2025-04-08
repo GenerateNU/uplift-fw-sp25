@@ -1,5 +1,5 @@
 # psoc_4200_uplift
-# 2025-04-03 23:25:57Z
+# 2025-04-08 00:42:35Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -59,15 +59,19 @@ set_location "\PWM_FRONT_0:PWMUDB:genblk1:ctrlreg\" 1 0 6
 set_location "\PWM_FRONT_0:PWMUDB:genblk8:stsreg\" 1 0 4
 set_location "\PWM_FRONT_0:PWMUDB:sP8:pwmdp:u0\" 1 0 2
 set_location "CURRENT_SENSE_1_INT" interrupt -1 -1 0
+set_location "LIMIT_SWITCH_1_INT" interrupt -1 -1 5
+set_location "LIMIT_SWITCH_2_INT" interrupt -1 -1 6
+set_location "LIMIT_SWITCH_3_INT" interrupt -1 -1 7
+set_location "LIMIT_SWITCH_4_INT" interrupt -1 -1 8
 set_location "\PWM_REAR_0:PWMUDB:runmode_enable\" 0 0 0 3
 set_location "\PWM_REAR_0:PWMUDB:prevCompare1\" 0 0 0 1
-set_location "\PWM_REAR_0:PWMUDB:status_0\" 0 0 0 2
-set_location "Net_231" 0 0 0 0
+set_location "\PWM_REAR_0:PWMUDB:status_0\" 0 0 0 0
+set_location "Net_231" 0 0 0 2
 set_location "\BUZZER_PWM_0:PWMUDB:runmode_enable\" 1 1 0 3
 set_location "\BUZZER_PWM_0:PWMUDB:prevCompare1\" 1 1 0 1
-set_location "\BUZZER_PWM_0:PWMUDB:status_0\" 1 1 0 2
-set_location "Net_1020" 1 1 0 0
+set_location "\BUZZER_PWM_0:PWMUDB:status_0\" 1 1 0 0
+set_location "Net_1020" 1 1 0 2
 set_location "\PWM_FRONT_0:PWMUDB:runmode_enable\" 1 0 0 3
 set_location "\PWM_FRONT_0:PWMUDB:prevCompare1\" 1 0 0 1
-set_location "\PWM_FRONT_0:PWMUDB:status_0\" 1 0 0 2
-set_location "Net_34" 1 0 0 0
+set_location "\PWM_FRONT_0:PWMUDB:status_0\" 1 0 0 0
+set_location "Net_34" 1 0 0 2

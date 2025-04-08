@@ -176,6 +176,14 @@
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\CURRENT_SENSE_4.h" value="HEADER;;;;;CURRENT_SENSE_4" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\CURRENT_SENSE_4_aliases.h" value="HEADER;;;;;CURRENT_SENSE_4" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\CURRENT_SENSE_4_PM.c" value="SOURCE_C;CortexM0;;;;CURRENT_SENSE_4" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_1_INT.c" value="SOURCE_C;CortexM0;;;;LIMIT_SWITCH_1_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_1_INT.h" value="HEADER;;;;;LIMIT_SWITCH_1_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_2_INT.c" value="SOURCE_C;CortexM0;;;;LIMIT_SWITCH_2_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_2_INT.h" value="HEADER;;;;;LIMIT_SWITCH_2_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_3_INT.c" value="SOURCE_C;CortexM0;;;;LIMIT_SWITCH_3_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_3_INT.h" value="HEADER;;;;;LIMIT_SWITCH_3_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_4_INT.c" value="SOURCE_C;CortexM0;;;;LIMIT_SWITCH_4_INT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\LIMIT_SWITCH_4_INT.h" value="HEADER;;;;;LIMIT_SWITCH_4_INT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_SCBCLK.c" value="SOURCE_C;CortexM0;;;;I2C_0_SCBCLK" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_SCBCLK.h" value="HEADER;;;;;I2C_0_SCBCLK" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\I2C_0_sda.c" value="SOURCE_C;CortexM0;;;;I2C_0_sda" />

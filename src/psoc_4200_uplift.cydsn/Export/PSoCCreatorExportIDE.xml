@@ -261,6 +261,14 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_0.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_0.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_FRONT_0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_1_INT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_2_INT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_3_INT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LIMIT_SWITCH_4_INT.h</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

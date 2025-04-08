@@ -1,5 +1,5 @@
 -- Project:   psoc_4200_uplift
--- Generated: 04/03/2025 19:25:56
+-- Generated: 04/07/2025 20:42:34
 -- PSoC Creator  4.4
 
 ENTITY psoc_4200_uplift IS
@@ -24,11 +24,11 @@ ENTITY psoc_4200_uplift IS
         BUTTON_DIR_DOWN(0)_PAD : IN std_ulogic;
         ENABLE_REAR_MOTORS(0)_PAD : OUT std_ulogic;
         IMU_RST(0)_PAD : OUT std_ulogic;
-        LIMIT_SWITCH_1(0)_PAD : OUT std_ulogic;
+        LIMIT_SWITCH_1(0)_PAD : IN std_ulogic;
         BUZZER_EN(0)_PAD : OUT std_ulogic;
-        LIMIT_SWITCH_4(0)_PAD : OUT std_ulogic;
-        LIMIT_SWITCH_3(0)_PAD : OUT std_ulogic;
-        LIMIT_SWITCH_2(0)_PAD : OUT std_ulogic;
+        LIMIT_SWITCH_4(0)_PAD : IN std_ulogic;
+        LIMIT_SWITCH_3(0)_PAD : IN std_ulogic;
+        LIMIT_SWITCH_2(0)_PAD : IN std_ulogic;
         BUZZER_PWM(0)_PAD : OUT std_ulogic;
         GPIO_13(0)_PAD : OUT std_ulogic;
         PSOC_ALERT(0)_PAD : OUT std_ulogic;
@@ -95,6 +95,10 @@ ARCHITECTURE __DEFAULT__ OF psoc_4200_uplift IS
     SIGNAL Net_594 : bit;
     SIGNAL Net_6 : bit;
     SIGNAL Net_607 : bit;
+    SIGNAL Net_7615 : bit;
+    SIGNAL Net_7616 : bit;
+    SIGNAL Net_7617 : bit;
+    SIGNAL Net_7618 : bit;
     SIGNAL PSOC_ALERT(0)__PA : bit;
     SIGNAL PWM_FRONT(0)__PA : bit;
     SIGNAL PWM_REAR(0)__PA : bit;
@@ -2459,13 +2463,13 @@ BEGIN
 
     LIMIT_SWITCH_1:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "001",
             ibuf_enabled => "1",
             id => "2467a4f8-c521-4a1c-bbfc-6537273a2ffb",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
-            input_sync => "1",
+            input_sync => "0",
             input_sync_mode => "0",
             intr_mode => "00",
             invert_in_clock => 0,
@@ -2495,7 +2499,7 @@ BEGIN
             pa_out_clock_en => -1,
             pa_out_reset => -1,
             pin_aliases => "",
-            pin_mode => "O",
+            pin_mode => "I",
             por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
@@ -2512,7 +2516,7 @@ BEGIN
             spanning => 0,
             sw_only => 0,
             use_annotation => "0",
-            vtrip => "10",
+            vtrip => "00",
             width => 1,
             in_clk_inv => 0,
             in_clken_inv => 0,
@@ -2535,10 +2539,11 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "LIMIT_SWITCH_1",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
             pa_out => LIMIT_SWITCH_1(0)__PA,
             oe => open,
+            fb => Net_7615,
             pad_in => LIMIT_SWITCH_1(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2639,13 +2644,13 @@ BEGIN
 
     LIMIT_SWITCH_4:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "001",
             ibuf_enabled => "1",
             id => "851c207f-ca87-46ab-8e4f-5fbd6055d97d",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
-            input_sync => "1",
+            input_sync => "0",
             input_sync_mode => "0",
             intr_mode => "00",
             invert_in_clock => 0,
@@ -2675,7 +2680,7 @@ BEGIN
             pa_out_clock_en => -1,
             pa_out_reset => -1,
             pin_aliases => "",
-            pin_mode => "O",
+            pin_mode => "I",
             por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
@@ -2692,7 +2697,7 @@ BEGIN
             spanning => 0,
             sw_only => 0,
             use_annotation => "0",
-            vtrip => "10",
+            vtrip => "00",
             width => 1,
             in_clk_inv => 0,
             in_clken_inv => 0,
@@ -2715,10 +2720,11 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "LIMIT_SWITCH_4",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
             pa_out => LIMIT_SWITCH_4(0)__PA,
             oe => open,
+            fb => Net_7618,
             pad_in => LIMIT_SWITCH_4(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2729,13 +2735,13 @@ BEGIN
 
     LIMIT_SWITCH_3:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "001",
             ibuf_enabled => "1",
             id => "c4c247bb-38b3-4452-b50c-a3e2693de198",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
-            input_sync => "1",
+            input_sync => "0",
             input_sync_mode => "0",
             intr_mode => "00",
             invert_in_clock => 0,
@@ -2765,7 +2771,7 @@ BEGIN
             pa_out_clock_en => -1,
             pa_out_reset => -1,
             pin_aliases => "",
-            pin_mode => "O",
+            pin_mode => "I",
             por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
@@ -2782,7 +2788,7 @@ BEGIN
             spanning => 0,
             sw_only => 0,
             use_annotation => "0",
-            vtrip => "10",
+            vtrip => "00",
             width => 1,
             in_clk_inv => 0,
             in_clken_inv => 0,
@@ -2805,10 +2811,11 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "LIMIT_SWITCH_3",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
             pa_out => LIMIT_SWITCH_3(0)__PA,
             oe => open,
+            fb => Net_7617,
             pad_in => LIMIT_SWITCH_3(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2819,13 +2826,13 @@ BEGIN
 
     LIMIT_SWITCH_2:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "001",
             ibuf_enabled => "1",
             id => "3aeef921-6a7b-40a3-bad9-aacfac732e51",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
-            input_sync => "1",
+            input_sync => "0",
             input_sync_mode => "0",
             intr_mode => "00",
             invert_in_clock => 0,
@@ -2855,7 +2862,7 @@ BEGIN
             pa_out_clock_en => -1,
             pa_out_reset => -1,
             pin_aliases => "",
-            pin_mode => "O",
+            pin_mode => "I",
             por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
@@ -2872,7 +2879,7 @@ BEGIN
             spanning => 0,
             sw_only => 0,
             use_annotation => "0",
-            vtrip => "10",
+            vtrip => "00",
             width => 1,
             in_clk_inv => 0,
             in_clken_inv => 0,
@@ -2895,10 +2902,11 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "LIMIT_SWITCH_2",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
             pa_out => LIMIT_SWITCH_2(0)__PA,
             oe => open,
+            fb => Net_7616,
             pad_in => LIMIT_SWITCH_2(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -3938,7 +3946,7 @@ BEGIN
 
     CURRENT_SENSE_2_INT:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_581,
@@ -3946,7 +3954,7 @@ BEGIN
 
     CURRENT_SENSE_4_INT:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_607,
@@ -3954,7 +3962,7 @@ BEGIN
 
     CURRENT_SENSE_3_INT:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_594,
@@ -4036,10 +4044,42 @@ BEGIN
 
     CURRENT_SENSE_1_INT:interrupt
         GENERIC MAP(
-            int_type => "10",
+            int_type => "00",
             is_nmi => 0)
         PORT MAP(
             interrupt => Net_520,
+            clock => ClockBlock_HFClk);
+
+    LIMIT_SWITCH_1_INT:interrupt
+        GENERIC MAP(
+            int_type => "00",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_7615,
+            clock => ClockBlock_HFClk);
+
+    LIMIT_SWITCH_2_INT:interrupt
+        GENERIC MAP(
+            int_type => "00",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_7616,
+            clock => ClockBlock_HFClk);
+
+    LIMIT_SWITCH_3_INT:interrupt
+        GENERIC MAP(
+            int_type => "00",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_7617,
+            clock => ClockBlock_HFClk);
+
+    LIMIT_SWITCH_4_INT:interrupt
+        GENERIC MAP(
+            int_type => "00",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_7618,
             clock => ClockBlock_HFClk);
 
     \PWM_REAR_0:PWMUDB:runmode_enable\:macrocell
