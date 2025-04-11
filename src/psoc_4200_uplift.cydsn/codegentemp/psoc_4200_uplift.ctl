@@ -1,6 +1,6 @@
 -- ======================================================================
 -- psoc_4200_uplift.ctl generated from psoc_4200_uplift
--- 04/07/2025 at 20:42
+-- 04/11/2025 at 01:50
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

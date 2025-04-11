@@ -75,9 +75,9 @@
   <block name="CURRENT_SENSE_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_3_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DIR_REAR_LEFT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DIR_REAR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DIR_FRONT_RIGHT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DIR_FRONT_LEFT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DIR_FRONT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CURRENT_SENSE_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ENABLE_FRONT_MOTORS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DIR_REAR_RIGHT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />

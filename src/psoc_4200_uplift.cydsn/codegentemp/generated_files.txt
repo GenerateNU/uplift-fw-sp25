@@ -42,18 +42,18 @@
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\PWM_REAR_0_PM.c" value="SOURCE_C;CortexM0;;;;PWM_REAR_0" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM0;;;;Clock_1" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_LEFT.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_LEFT.h" value="HEADER;;;;;DIR_FRONT_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_LEFT_aliases.h" value="HEADER;;;;;DIR_FRONT_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_LEFT_PM.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT_LEFT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT.h" value="HEADER;;;;;DIR_FRONT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_aliases.h" value="HEADER;;;;;DIR_FRONT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_PM.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_RIGHT.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT_RIGHT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_RIGHT.h" value="HEADER;;;;;DIR_FRONT_RIGHT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_RIGHT_aliases.h" value="HEADER;;;;;DIR_FRONT_RIGHT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_FRONT_RIGHT_PM.c" value="SOURCE_C;CortexM0;;;;DIR_FRONT_RIGHT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_LEFT.c" value="SOURCE_C;CortexM0;;;;DIR_REAR_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_LEFT.h" value="HEADER;;;;;DIR_REAR_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_LEFT_aliases.h" value="HEADER;;;;;DIR_REAR_LEFT" />
-  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_LEFT_PM.c" value="SOURCE_C;CortexM0;;;;DIR_REAR_LEFT" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR.c" value="SOURCE_C;CortexM0;;;;DIR_REAR" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR.h" value="HEADER;;;;;DIR_REAR" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_aliases.h" value="HEADER;;;;;DIR_REAR" />
+  <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_PM.c" value="SOURCE_C;CortexM0;;;;DIR_REAR" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_RIGHT.c" value="SOURCE_C;CortexM0;;;;DIR_REAR_RIGHT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_RIGHT.h" value="HEADER;;;;;DIR_REAR_RIGHT" />
   <file name="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\codegentemp\DIR_REAR_RIGHT_aliases.h" value="HEADER;;;;;DIR_REAR_RIGHT" />

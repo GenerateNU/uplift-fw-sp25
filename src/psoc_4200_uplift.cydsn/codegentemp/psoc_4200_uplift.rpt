@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.138ms
+Loading plugins phase: Elapsed time ==> 0s.205ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj -d CY8C4245AXI-483 -s C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 0s.975ms
+Elaboration phase: Elapsed time ==> 1s.188ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.043ms
+HDL generation phase: Elapsed time ==> 0s.047ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\amant
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Mon Apr 07 20:42:32 2025
+Fri Apr 11 01:50:06 2025
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 psoc_4200_uplift.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Mon Apr 07 20:42:32 2025
+Fri Apr 11 01:50:06 2025
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -90,7 +90,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\amant
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Mon Apr 07 20:42:32 2025
+Fri Apr 11 01:50:06 2025
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -123,7 +123,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\amant
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Mon Apr 07 20:42:33 2025
+Fri Apr 11 01:50:07 2025
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -722,9 +722,9 @@ Aliasing \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:a_4\ to zero
 Aliasing \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:a_3\ to zero
 Aliasing \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:a_2\ to zero
 Aliasing \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ to tmpOE__PWM_REAR_net_0
-Aliasing tmpOE__DIR_FRONT_LEFT_net_0 to tmpOE__PWM_REAR_net_0
+Aliasing tmpOE__DIR_FRONT_net_0 to tmpOE__PWM_REAR_net_0
 Aliasing tmpOE__DIR_FRONT_RIGHT_net_0 to tmpOE__PWM_REAR_net_0
-Aliasing tmpOE__DIR_REAR_LEFT_net_0 to tmpOE__PWM_REAR_net_0
+Aliasing tmpOE__DIR_REAR_net_0 to tmpOE__PWM_REAR_net_0
 Aliasing tmpOE__DIR_REAR_RIGHT_net_0 to tmpOE__PWM_REAR_net_0
 Aliasing tmpOE__ENABLE_FRONT_MOTORS_net_0 to tmpOE__PWM_REAR_net_0
 Aliasing tmpOE__CURRENT_SENSE_EN_net_0 to tmpOE__PWM_REAR_net_0
@@ -950,9 +950,9 @@ Removing Lhs of wire \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:a_0\[261] = \PWM_REAR_0:P
 Removing Lhs of wire \PWM_REAR_0:PWMUDB:MODIN1_0\[262] = \PWM_REAR_0:PWMUDB:dith_count_0\[118]
 Removing Lhs of wire \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\[394] = tmpOE__PWM_REAR_net_0[1]
 Removing Lhs of wire \PWM_REAR_0:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\[395] = tmpOE__PWM_REAR_net_0[1]
-Removing Lhs of wire tmpOE__DIR_FRONT_LEFT_net_0[404] = tmpOE__PWM_REAR_net_0[1]
+Removing Lhs of wire tmpOE__DIR_FRONT_net_0[404] = tmpOE__PWM_REAR_net_0[1]
 Removing Lhs of wire tmpOE__DIR_FRONT_RIGHT_net_0[410] = tmpOE__PWM_REAR_net_0[1]
-Removing Lhs of wire tmpOE__DIR_REAR_LEFT_net_0[416] = tmpOE__PWM_REAR_net_0[1]
+Removing Lhs of wire tmpOE__DIR_REAR_net_0[416] = tmpOE__PWM_REAR_net_0[1]
 Removing Lhs of wire tmpOE__DIR_REAR_RIGHT_net_0[422] = tmpOE__PWM_REAR_net_0[1]
 Removing Lhs of wire tmpOE__ENABLE_FRONT_MOTORS_net_0[428] = tmpOE__PWM_REAR_net_0[1]
 Removing Lhs of wire tmpOE__CURRENT_SENSE_EN_net_0[434] = tmpOE__PWM_REAR_net_0[1]
@@ -1500,14 +1500,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj -dcpsoc3 psoc_4200_uplift.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.166ms
+Warp synthesis phase: Elapsed time ==> 1s.347ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Monday, 07 April 2025 20:42:33
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Friday, 11 April 2025 01:50:07
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj -d CY8C4245AXI-483 psoc_4200_uplift.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.015ms
+Design parsing phase: Elapsed time ==> 0s.018ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -1562,6 +1562,8 @@ Done removing unused cells.
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: DIR_FRONT_RIGHT(0)
+
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -1744,7 +1746,7 @@ Design Equations
         {
         }
 
-    Pin : Name = DIR_FRONT_LEFT(0)
+    Pin : Name = DIR_FRONT(0)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
@@ -1777,8 +1779,8 @@ Design Equations
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => DIR_FRONT_LEFT(0)__PA ,
-            pad => DIR_FRONT_LEFT(0)_PAD );
+            pa_out => DIR_FRONT(0)__PA ,
+            pad => DIR_FRONT(0)_PAD );
         Properties:
         {
         }
@@ -1818,11 +1820,8 @@ Design Equations
         PORT MAP (
             pa_out => DIR_FRONT_RIGHT(0)__PA ,
             pad => DIR_FRONT_RIGHT(0)_PAD );
-        Properties:
-        {
-        }
 
-    Pin : Name = DIR_REAR_LEFT(0)
+    Pin : Name = DIR_REAR(0)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
@@ -1855,8 +1854,8 @@ Design Equations
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => DIR_REAR_LEFT(0)__PA ,
-            pad => DIR_REAR_LEFT(0)_PAD );
+            pa_out => DIR_REAR(0)__PA ,
+            pad => DIR_REAR(0)_PAD );
         Properties:
         {
         }
@@ -3472,8 +3471,8 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
   8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.101ms
-Tech Mapping phase: Elapsed time ==> 0s.115ms
+Technology Mapping: Elapsed time ==> 0s.110ms
+Tech Mapping phase: Elapsed time ==> 0s.137ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -3485,11 +3484,10 @@ PWM_REAR(0)                         : [IOP=(1)][IoId=(1)]
 PWM_FRONT(0)                        : [IOP=(1)][IoId=(0)]                
 \I2C_0:sda(0)\                      : [IOP=(4)][IoId=(1)]                
 \I2C_0:scl(0)\                      : [IOP=(4)][IoId=(0)]                
-DIR_FRONT_LEFT(0)                   : [IOP=(2)][IoId=(0)]                
-DIR_FRONT_RIGHT(0)                  : [IOP=(2)][IoId=(1)]                
-DIR_REAR_LEFT(0)                    : [IOP=(2)][IoId=(2)]                
+DIR_FRONT(0)                        : [IOP=(2)][IoId=(0)]                
+DIR_REAR(0)                         : [IOP=(2)][IoId=(2)]                
 DIR_REAR_RIGHT(0)                   : [IOP=(2)][IoId=(3)]                
-ENABLE_FRONT_MOTORS(0)              : [IOP=(1)][IoId=(6)]                
+ENABLE_FRONT_MOTORS(0)              : [IOP=(2)][IoId=(1)]                
 CURRENT_SENSE_EN(0)                 : [IOP=(3)][IoId=(5)]                
 LED_4(0)                            : [IOP=(0)][IoId=(2)]                
 LED_1(0)                            : [IOP=(4)][IoId=(3)]                
@@ -3516,18 +3514,19 @@ CURRENT_SENSE_2(0)                  : [IOP=(1)][IoId=(5)]
 CURRENT_SENSE_3(0)                  : [IOP=(1)][IoId=(4)]                
 CURRENT_SENSE_4(0)                  : [IOP=(3)][IoId=(1)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
+DIR_FRONT_RIGHT(0)                  : [IOP=(1)][IoId=(6)]                
 \I2C_0:SCB\                         : SCB_[FFB(SCB,0)]                   
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.0947464s
+Elapsed time ==> 0.0929841s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.293ms
+Analog Placement phase: Elapsed time ==> 0s.311ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0004722 secs
+Route success=True, Iterations=1 Elapsed=0.0004794 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -3540,7 +3539,7 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.009ms
+Analog Code Generation phase: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -3575,7 +3574,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.013ms
+Partitioning: Elapsed time ==> 0s.014ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -4722,7 +4721,7 @@ Pin : Name = CURRENT_SENSE_2(0)
     }
 
 [IoId=6]: 
-Pin : Name = ENABLE_FRONT_MOTORS(0)
+Pin : Name = DIR_FRONT_RIGHT(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -4755,8 +4754,8 @@ Pin : Name = ENABLE_FRONT_MOTORS(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => ENABLE_FRONT_MOTORS(0)__PA ,
-        pad => ENABLE_FRONT_MOTORS(0)_PAD );
+        pa_out => DIR_FRONT_RIGHT(0)__PA ,
+        pad => DIR_FRONT_RIGHT(0)_PAD );
     Properties:
     {
     }
@@ -4803,7 +4802,7 @@ Pin : Name = ENABLE_REAR_MOTORS(0)
 
 Port 2 contains the following IO cells:
 [IoId=0]: 
-Pin : Name = DIR_FRONT_LEFT(0)
+Pin : Name = DIR_FRONT(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -4836,14 +4835,14 @@ Pin : Name = DIR_FRONT_LEFT(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => DIR_FRONT_LEFT(0)__PA ,
-        pad => DIR_FRONT_LEFT(0)_PAD );
+        pa_out => DIR_FRONT(0)__PA ,
+        pad => DIR_FRONT(0)_PAD );
     Properties:
     {
     }
 
 [IoId=1]: 
-Pin : Name = DIR_FRONT_RIGHT(0)
+Pin : Name = ENABLE_FRONT_MOTORS(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -4876,14 +4875,14 @@ Pin : Name = DIR_FRONT_RIGHT(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => DIR_FRONT_RIGHT(0)__PA ,
-        pad => DIR_FRONT_RIGHT(0)_PAD );
+        pa_out => ENABLE_FRONT_MOTORS(0)__PA ,
+        pad => ENABLE_FRONT_MOTORS(0)_PAD );
     Properties:
     {
     }
 
 [IoId=2]: 
-Pin : Name = DIR_REAR_LEFT(0)
+Pin : Name = DIR_REAR(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -4916,8 +4915,8 @@ Pin : Name = DIR_REAR_LEFT(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => DIR_REAR_LEFT(0)__PA ,
-        pad => DIR_REAR_LEFT(0)_PAD );
+        pa_out => DIR_REAR(0)__PA ,
+        pad => DIR_REAR(0)_PAD );
     Properties:
     {
     }
@@ -5618,12 +5617,12 @@ Port | Pin | Fixed |      Type |       Drive Mode |                   Name | Con
      |   3 |     * |      NONE |         CMOS_OUT |             GPIO_13(0) | 
      |   4 |     * |      NONE |     HI_Z_DIGITAL |     CURRENT_SENSE_3(0) | FB(Net_594)
      |   5 |     * |      NONE |     HI_Z_DIGITAL |     CURRENT_SENSE_2(0) | FB(Net_581)
-     |   6 |     * |      NONE |         CMOS_OUT | ENABLE_FRONT_MOTORS(0) | 
+     |   6 |       |      NONE |         CMOS_OUT |     DIR_FRONT_RIGHT(0) | 
      |   7 |     * |      NONE |         CMOS_OUT |  ENABLE_REAR_MOTORS(0) | 
 -----+-----+-------+-----------+------------------+------------------------+-------------
-   2 |   0 |     * |      NONE |         CMOS_OUT |      DIR_FRONT_LEFT(0) | 
-     |   1 |     * |      NONE |         CMOS_OUT |     DIR_FRONT_RIGHT(0) | 
-     |   2 |     * |      NONE |         CMOS_OUT |       DIR_REAR_LEFT(0) | 
+   2 |   0 |     * |      NONE |         CMOS_OUT |           DIR_FRONT(0) | 
+     |   1 |     * |      NONE |         CMOS_OUT | ENABLE_FRONT_MOTORS(0) | 
+     |   2 |     * |      NONE |         CMOS_OUT |            DIR_REAR(0) | 
      |   3 |     * |      NONE |         CMOS_OUT |      DIR_REAR_RIGHT(0) | 
      |   4 |     * |      NONE |     HI_Z_DIGITAL |      BUTTON_TILT_EN(0) | 
      |   5 |     * |      NONE |     HI_Z_DIGITAL |     BUTTON_MOTOR_EN(0) | 
@@ -5645,33 +5644,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                   Name | Con
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.045ms
-Digital Placement phase: Elapsed time ==> 0s.536ms
+Digital component placer commit/Report: Elapsed time ==> 0s.027ms
+Digital Placement phase: Elapsed time ==> 0s.569ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/psoc4a/route_arch-rrg.cydata" --vh2-path "psoc_4200_uplift_r.vh2" --pcf-path "psoc_4200_uplift.pco" --des-name "psoc_4200_uplift" --dsf-path "psoc_4200_uplift.dsf" --sdc-path "psoc_4200_uplift.sdc" --lib-path "psoc_4200_uplift_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.464ms
+Digital Routing phase: Elapsed time ==> 0s.508ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
 Bitstream Generation phase: Elapsed time ==> 0s.111ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.002ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in psoc_4200_uplift_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.230ms
+Static timing analysis phase: Elapsed time ==> 0s.190ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.156ms
+Design database save phase: Elapsed time ==> 0s.115ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 1s.951ms
+cydsfit: Elapsed time ==> 1s.995ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 1s.953ms
-API generation phase: Elapsed time ==> 1s.795ms
-Dependency generation phase: Elapsed time ==> 0s.010ms
-Cleanup phase: Elapsed time ==> 0s.001ms
+Fitter phase: Elapsed time ==> 1s.997ms
+API generation phase: Elapsed time ==> 1s.557ms
+Dependency generation phase: Elapsed time ==> 0s.015ms
+Cleanup phase: Elapsed time ==> 0s.000ms

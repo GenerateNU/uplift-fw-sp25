@@ -2,7 +2,7 @@
 --	Conversion of psoc_4200_uplift.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Apr 07 20:42:33 2025
+--	Fri Apr 11 01:50:07 2025
 --
 
 USE cypress.cypress.all;
@@ -425,21 +425,21 @@ SIGNAL \PWM_REAR_0:Net_138\ : bit;
 SIGNAL \PWM_REAR_0:Net_125\ : bit;
 SIGNAL \PWM_REAR_0:Net_183\ : bit;
 SIGNAL \PWM_REAR_0:Net_181\ : bit;
-SIGNAL tmpOE__DIR_FRONT_LEFT_net_0 : bit;
-SIGNAL tmpFB_0__DIR_FRONT_LEFT_net_0 : bit;
-SIGNAL tmpIO_0__DIR_FRONT_LEFT_net_0 : bit;
-TERMINAL tmpSIOVREF__DIR_FRONT_LEFT_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__DIR_FRONT_LEFT_net_0 : bit;
+SIGNAL tmpOE__DIR_FRONT_net_0 : bit;
+SIGNAL tmpFB_0__DIR_FRONT_net_0 : bit;
+SIGNAL tmpIO_0__DIR_FRONT_net_0 : bit;
+TERMINAL tmpSIOVREF__DIR_FRONT_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__DIR_FRONT_net_0 : bit;
 SIGNAL tmpOE__DIR_FRONT_RIGHT_net_0 : bit;
 SIGNAL tmpFB_0__DIR_FRONT_RIGHT_net_0 : bit;
 SIGNAL tmpIO_0__DIR_FRONT_RIGHT_net_0 : bit;
 TERMINAL tmpSIOVREF__DIR_FRONT_RIGHT_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__DIR_FRONT_RIGHT_net_0 : bit;
-SIGNAL tmpOE__DIR_REAR_LEFT_net_0 : bit;
-SIGNAL tmpFB_0__DIR_REAR_LEFT_net_0 : bit;
-SIGNAL tmpIO_0__DIR_REAR_LEFT_net_0 : bit;
-TERMINAL tmpSIOVREF__DIR_REAR_LEFT_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__DIR_REAR_LEFT_net_0 : bit;
+SIGNAL tmpOE__DIR_REAR_net_0 : bit;
+SIGNAL tmpFB_0__DIR_REAR_net_0 : bit;
+SIGNAL tmpIO_0__DIR_REAR_net_0 : bit;
+TERMINAL tmpSIOVREF__DIR_REAR_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__DIR_REAR_net_0 : bit;
 SIGNAL tmpOE__DIR_REAR_RIGHT_net_0 : bit;
 SIGNAL tmpFB_0__DIR_REAR_RIGHT_net_0 : bit;
 SIGNAL tmpIO_0__DIR_REAR_RIGHT_net_0 : bit;
@@ -1820,12 +1820,12 @@ Clock_1:cy_clock_v1_0
 		id=>"ec1c5d3b-8ab0-4a9d-81cf-f4ef782546f5",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"17361111111.1111",
+		period=>"5000000000",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_45,
 		dig_domain_out=>open);
-DIR_FRONT_LEFT:cy_psoc3_pins_v1_10
+DIR_FRONT:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"9d9ddb8c-9fa9-42cc-b750-bfa8b45dfdde",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -1883,10 +1883,10 @@ DIR_FRONT_LEFT:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__PWM_REAR_net_0),
 		y=>(zero),
-		fb=>(tmpFB_0__DIR_FRONT_LEFT_net_0),
+		fb=>(tmpFB_0__DIR_FRONT_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__DIR_FRONT_LEFT_net_0),
-		siovref=>(tmpSIOVREF__DIR_FRONT_LEFT_net_0),
+		io=>(tmpIO_0__DIR_FRONT_net_0),
+		siovref=>(tmpSIOVREF__DIR_FRONT_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>tmpOE__PWM_REAR_net_0,
@@ -1894,7 +1894,7 @@ DIR_FRONT_LEFT:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>tmpOE__PWM_REAR_net_0,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__DIR_FRONT_LEFT_net_0);
+		interrupt=>tmpINTERRUPT_0__DIR_FRONT_net_0);
 DIR_FRONT_RIGHT:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ba8b71bc-3a59-46d5-b7f5-a456b85a3c32",
 		drive_mode=>"110",
@@ -1965,7 +1965,7 @@ DIR_FRONT_RIGHT:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__PWM_REAR_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__DIR_FRONT_RIGHT_net_0);
-DIR_REAR_LEFT:cy_psoc3_pins_v1_10
+DIR_REAR:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"37b8dd2b-e7f8-4b5c-949f-8399eb11eb26",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -2023,10 +2023,10 @@ DIR_REAR_LEFT:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__PWM_REAR_net_0),
 		y=>(zero),
-		fb=>(tmpFB_0__DIR_REAR_LEFT_net_0),
+		fb=>(tmpFB_0__DIR_REAR_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__DIR_REAR_LEFT_net_0),
-		siovref=>(tmpSIOVREF__DIR_REAR_LEFT_net_0),
+		io=>(tmpIO_0__DIR_REAR_net_0),
+		siovref=>(tmpSIOVREF__DIR_REAR_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>tmpOE__PWM_REAR_net_0,
@@ -2034,7 +2034,7 @@ DIR_REAR_LEFT:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>tmpOE__PWM_REAR_net_0,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__DIR_REAR_LEFT_net_0);
+		interrupt=>tmpINTERRUPT_0__DIR_REAR_net_0);
 DIR_REAR_RIGHT:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"dd4571ca-6ece-4e36-a524-7e4241a93bb7",
 		drive_mode=>"110",

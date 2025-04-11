@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: DIR_FRONT_LEFT.c  
+* File Name: DIR_FRONT.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "DIR_FRONT_LEFT.h"
+#include "DIR_FRONT.h"
 
-static DIR_FRONT_LEFT_BACKUP_STRUCT  DIR_FRONT_LEFT_backup = {0u, 0u, 0u};
+static DIR_FRONT_BACKUP_STRUCT  DIR_FRONT_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: DIR_FRONT_LEFT_Sleep
+* Function Name: DIR_FRONT_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static DIR_FRONT_LEFT_BACKUP_STRUCT  DIR_FRONT_LEFT_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet DIR_FRONT_LEFT_SUT.c usage_DIR_FRONT_LEFT_Sleep_Wakeup
+*  \snippet DIR_FRONT_SUT.c usage_DIR_FRONT_Sleep_Wakeup
 *******************************************************************************/
-void DIR_FRONT_LEFT_Sleep(void)
+void DIR_FRONT_Sleep(void)
 {
-    #if defined(DIR_FRONT_LEFT__PC)
-        DIR_FRONT_LEFT_backup.pcState = DIR_FRONT_LEFT_PC;
+    #if defined(DIR_FRONT__PC)
+        DIR_FRONT_backup.pcState = DIR_FRONT_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            DIR_FRONT_LEFT_backup.usbState = DIR_FRONT_LEFT_CR1_REG;
-            DIR_FRONT_LEFT_USB_POWER_REG |= DIR_FRONT_LEFT_USBIO_ENTER_SLEEP;
-            DIR_FRONT_LEFT_CR1_REG &= DIR_FRONT_LEFT_USBIO_CR1_OFF;
+            DIR_FRONT_backup.usbState = DIR_FRONT_CR1_REG;
+            DIR_FRONT_USB_POWER_REG |= DIR_FRONT_USBIO_ENTER_SLEEP;
+            DIR_FRONT_CR1_REG &= DIR_FRONT_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(DIR_FRONT_LEFT__SIO)
-        DIR_FRONT_LEFT_backup.sioState = DIR_FRONT_LEFT_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(DIR_FRONT__SIO)
+        DIR_FRONT_backup.sioState = DIR_FRONT_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        DIR_FRONT_LEFT_SIO_REG &= (uint32)(~DIR_FRONT_LEFT_SIO_LPM_MASK);
+        DIR_FRONT_SIO_REG &= (uint32)(~DIR_FRONT_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: DIR_FRONT_LEFT_Wakeup
+* Function Name: DIR_FRONT_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
@@ -77,22 +77,22 @@ void DIR_FRONT_LEFT_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to DIR_FRONT_LEFT_Sleep() for an example usage.
+*  Refer to DIR_FRONT_Sleep() for an example usage.
 *******************************************************************************/
-void DIR_FRONT_LEFT_Wakeup(void)
+void DIR_FRONT_Wakeup(void)
 {
-    #if defined(DIR_FRONT_LEFT__PC)
-        DIR_FRONT_LEFT_PC = DIR_FRONT_LEFT_backup.pcState;
+    #if defined(DIR_FRONT__PC)
+        DIR_FRONT_PC = DIR_FRONT_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            DIR_FRONT_LEFT_USB_POWER_REG &= DIR_FRONT_LEFT_USBIO_EXIT_SLEEP_PH1;
-            DIR_FRONT_LEFT_CR1_REG = DIR_FRONT_LEFT_backup.usbState;
-            DIR_FRONT_LEFT_USB_POWER_REG &= DIR_FRONT_LEFT_USBIO_EXIT_SLEEP_PH2;
+            DIR_FRONT_USB_POWER_REG &= DIR_FRONT_USBIO_EXIT_SLEEP_PH1;
+            DIR_FRONT_CR1_REG = DIR_FRONT_backup.usbState;
+            DIR_FRONT_USB_POWER_REG &= DIR_FRONT_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(DIR_FRONT_LEFT__SIO)
-        DIR_FRONT_LEFT_SIO_REG = DIR_FRONT_LEFT_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(DIR_FRONT__SIO)
+        DIR_FRONT_SIO_REG = DIR_FRONT_backup.sioState;
     #endif
 }
 

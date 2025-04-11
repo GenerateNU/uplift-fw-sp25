@@ -1,4 +1,4 @@
---------------- Rebuild Started: 04/07/2025 20:42:30 Project: psoc_4200_uplift, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 04/11/2025 00:29:54 Project: psoc_4200_uplift, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\cymetadata.o"
@@ -99,6 +99,10 @@ Deleting file ".\CortexM0\ARM_GCC_541\Debug\BUZZER_PWM_0.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BUZZER_PWM_0_PM.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_0.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\PWM_FRONT_0_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_1_INT.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_2_INT.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_3_INT.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\LIMIT_SWITCH_4_INT.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.hex"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.elf"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.map"
@@ -126,22 +130,30 @@ Dependency Generation...
 Cleanup...
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
 main.c: In function 'i2c_read_transaction':
-main.c:96:12: warning: unused variable 'errS' [-Wunused-variable]
+main.c:174:12: warning: unused variable 'errS' [-Wunused-variable]
      uint32 errS = I2C_0_I2CMasterReadBuf(slave_address, copy_to, size, I2C_0_I2C_MODE_REPEAT_START);
             ^
 main.c: In function 'check_imu':
-main.c:117:13: warning: unused variable 'usable_pitch_data' [-Wunused-variable]
+main.c:195:13: warning: unused variable 'usable_pitch_data' [-Wunused-variable]
      int16_t usable_pitch_data = (int16_t) ((pitch_imu_raw_data[1] << 8) | pitch_imu_raw_data[0]) / 16;
              ^
-main.c:116:13: warning: unused variable 'usable_roll_data' [-Wunused-variable]
+main.c:194:13: warning: unused variable 'usable_roll_data' [-Wunused-variable]
      int16_t usable_roll_data = (int16_t) ((roll_imu_raw_data[1] << 8) | roll_imu_raw_data[0]) / 16;
              ^
-main.c: In function 'scan_i2c_bus':
-main.c:347:13: warning: unused variable 'dummy' [-Wunused-variable]
-     uint8_t dummy = 0;
-             ^
 main.c: In function 'main':
-main.c:371:11: warning: unused variable 'current_state' [-Wunused-variable]
+main.c:561:21: warning: passing argument 1 of 'Play_Melody' from incompatible pointer type [-Wincompatible-pointer-types]
+         Play_Melody((const uint16_t *) noteFrequencies, (const NoteDuration *) noteDurations, SONG_LENGTH);
+                     ^
+main.c:139:6: note: expected 'const uint16_t ** {aka const short unsigned int **}' but argument is of type 'const uint16_t * {aka const short unsigned int *}'
+ void Play_Melody(const uint16_t *notes[], const uint16_t *durations[], uint16_t count) {
+      ^
+main.c:561:57: warning: passing argument 2 of 'Play_Melody' from incompatible pointer type [-Wincompatible-pointer-types]
+         Play_Melody((const uint16_t *) noteFrequencies, (const NoteDuration *) noteDurations, SONG_LENGTH);
+                                                         ^
+main.c:139:6: note: expected 'const uint16_t ** {aka const short unsigned int **}' but argument is of type 'const NoteDuration * {aka const enum <anonymous> *}'
+ void Play_Melody(const uint16_t *notes[], const uint16_t *durations[], uint16_t count) {
+      ^
+main.c:548:11: warning: unused variable 'current_state' [-Wunused-variable]
      State current_state = IDLE;
            ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cyfitter_cfg.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\cyfitter_cfg.c -o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -255,6 +267,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\CortexM0\ARM_GCC_541\Debug\psoc_4200_uplift.elf
-Flash used: 5381 of 32768 bytes (16.4%). Application: 5125 bytes. Metadata: 256 bytes.
+Flash used: 7077 of 32768 bytes (21.6%). Application: 6821 bytes. Metadata: 256 bytes.
 SRAM used: 1588 of 4096 bytes (38.8%). Stack: 1024 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 04/07/2025 20:42:52 ---------------
+--------------- Rebuild Succeeded: 04/11/2025 00:30:15 ---------------

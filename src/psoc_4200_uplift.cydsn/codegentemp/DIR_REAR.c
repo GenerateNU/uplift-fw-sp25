@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: DIR_REAR_LEFT.c  
+* File Name: DIR_REAR.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "DIR_REAR_LEFT.h"
+#include "DIR_REAR.h"
 
 
-#if defined(DIR_REAR_LEFT__PC)
-    #define DIR_REAR_LEFT_SetP4PinDriveMode(shift, mode)  \
+#if defined(DIR_REAR__PC)
+    #define DIR_REAR_SetP4PinDriveMode(shift, mode)  \
     do { \
-        DIR_REAR_LEFT_PC =   (DIR_REAR_LEFT_PC & \
-                                (uint32)(~(uint32)(DIR_REAR_LEFT_DRIVE_MODE_IND_MASK << \
-                                (DIR_REAR_LEFT_DRIVE_MODE_BITS * (shift))))) | \
+        DIR_REAR_PC =   (DIR_REAR_PC & \
+                                (uint32)(~(uint32)(DIR_REAR_DRIVE_MODE_IND_MASK << \
+                                (DIR_REAR_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (DIR_REAR_LEFT_DRIVE_MODE_BITS * (shift))); \
+                                (DIR_REAR_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define DIR_REAR_LEFT_SetP4PinDriveMode(shift, mode)  \
+        #define DIR_REAR_SetP4PinDriveMode(shift, mode)  \
         do { \
-            DIR_REAR_LEFT_USBIO_CTRL_REG = (DIR_REAR_LEFT_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(DIR_REAR_LEFT_DRIVE_MODE_IND_MASK << \
-                                    (DIR_REAR_LEFT_DRIVE_MODE_BITS * (shift))))) | \
+            DIR_REAR_USBIO_CTRL_REG = (DIR_REAR_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(DIR_REAR_DRIVE_MODE_IND_MASK << \
+                                    (DIR_REAR_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (DIR_REAR_LEFT_DRIVE_MODE_BITS * (shift))); \
+                                    (DIR_REAR_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(DIR_REAR_LEFT__PC) || (CY_PSOC4_4200L) 
+#if defined(DIR_REAR__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: DIR_REAR_LEFT_SetDriveMode
+    * Function Name: DIR_REAR_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_SetDriveMode
+    *  \snippet DIR_REAR_SUT.c usage_DIR_REAR_SetDriveMode
     *******************************************************************************/
-    void DIR_REAR_LEFT_SetDriveMode(uint8 mode)
+    void DIR_REAR_SetDriveMode(uint8 mode)
     {
-		DIR_REAR_LEFT_SetP4PinDriveMode(DIR_REAR_LEFT__0__SHIFT, mode);
+		DIR_REAR_SetP4PinDriveMode(DIR_REAR__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: DIR_REAR_LEFT_Write
+* Function Name: DIR_REAR_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_Write
+*  \snippet DIR_REAR_SUT.c usage_DIR_REAR_Write
 *******************************************************************************/
-void DIR_REAR_LEFT_Write(uint8 value)
+void DIR_REAR_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(DIR_REAR_LEFT_DR & (uint8)(~DIR_REAR_LEFT_MASK));
-    drVal = (drVal | ((uint8)(value << DIR_REAR_LEFT_SHIFT) & DIR_REAR_LEFT_MASK));
-    DIR_REAR_LEFT_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(DIR_REAR_DR & (uint8)(~DIR_REAR_MASK));
+    drVal = (drVal | ((uint8)(value << DIR_REAR_SHIFT) & DIR_REAR_MASK));
+    DIR_REAR_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: DIR_REAR_LEFT_Read
+* Function Name: DIR_REAR_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void DIR_REAR_LEFT_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_Read  
+*  \snippet DIR_REAR_SUT.c usage_DIR_REAR_Read  
 *******************************************************************************/
-uint8 DIR_REAR_LEFT_Read(void)
+uint8 DIR_REAR_Read(void)
 {
-    return (uint8)((DIR_REAR_LEFT_PS & DIR_REAR_LEFT_MASK) >> DIR_REAR_LEFT_SHIFT);
+    return (uint8)((DIR_REAR_PS & DIR_REAR_MASK) >> DIR_REAR_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: DIR_REAR_LEFT_ReadDataReg
+* Function Name: DIR_REAR_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 DIR_REAR_LEFT_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred DIR_REAR_LEFT_Read() API because the 
-* DIR_REAR_LEFT_ReadDataReg() reads the data register instead of the status 
+* preferred DIR_REAR_Read() API because the 
+* DIR_REAR_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 DIR_REAR_LEFT_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_ReadDataReg 
+*  \snippet DIR_REAR_SUT.c usage_DIR_REAR_ReadDataReg 
 *******************************************************************************/
-uint8 DIR_REAR_LEFT_ReadDataReg(void)
+uint8 DIR_REAR_ReadDataReg(void)
 {
-    return (uint8)((DIR_REAR_LEFT_DR & DIR_REAR_LEFT_MASK) >> DIR_REAR_LEFT_SHIFT);
+    return (uint8)((DIR_REAR_DR & DIR_REAR_MASK) >> DIR_REAR_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: DIR_REAR_LEFT_SetInterruptMode
+* Function Name: DIR_REAR_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 DIR_REAR_LEFT_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use DIR_REAR_LEFT_INTR_ALL to configure the
+*  component. Or you may use DIR_REAR_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - DIR_REAR_LEFT_0_INTR       (First pin in the list)
-*  - DIR_REAR_LEFT_1_INTR       (Second pin in the list)
+*  - DIR_REAR_0_INTR       (First pin in the list)
+*  - DIR_REAR_1_INTR       (Second pin in the list)
 *  - ...
-*  - DIR_REAR_LEFT_INTR_ALL     (All pins in Pins component)
+*  - DIR_REAR_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 DIR_REAR_LEFT_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_SetInterruptMode
+*  \snippet DIR_REAR_SUT.c usage_DIR_REAR_SetInterruptMode
 *******************************************************************************/
-void DIR_REAR_LEFT_SetInterruptMode(uint16 position, uint16 mode)
+void DIR_REAR_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  DIR_REAR_LEFT_INTCFG & (uint32)(~(uint32)position);
-    DIR_REAR_LEFT_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  DIR_REAR_INTCFG & (uint32)(~(uint32)position);
+    DIR_REAR_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: DIR_REAR_LEFT_ClearInterrupt
+* Function Name: DIR_REAR_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void DIR_REAR_LEFT_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet DIR_REAR_LEFT_SUT.c usage_DIR_REAR_LEFT_ClearInterrupt
+*  \snippet DIR_REAR_SUT.c usage_DIR_REAR_ClearInterrupt
 *******************************************************************************/
-uint8 DIR_REAR_LEFT_ClearInterrupt(void)
+uint8 DIR_REAR_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(DIR_REAR_LEFT_INTSTAT & DIR_REAR_LEFT_MASK);
-	DIR_REAR_LEFT_INTSTAT = maskedStatus;
-    return maskedStatus >> DIR_REAR_LEFT_SHIFT;
+	uint8 maskedStatus = (uint8)(DIR_REAR_INTSTAT & DIR_REAR_MASK);
+	DIR_REAR_INTSTAT = maskedStatus;
+    return maskedStatus >> DIR_REAR_SHIFT;
 }
 
 

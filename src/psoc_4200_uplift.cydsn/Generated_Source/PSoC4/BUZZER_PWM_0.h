@@ -226,8 +226,8 @@ void BUZZER_PWM_0_RestoreConfig(void) ;
 /***************************************
 *         Initialization Values
 **************************************/
-#define BUZZER_PWM_0_INIT_PERIOD_VALUE          (255u)
-#define BUZZER_PWM_0_INIT_COMPARE_VALUE1        (25u)
+#define BUZZER_PWM_0_INIT_PERIOD_VALUE          (20u)
+#define BUZZER_PWM_0_INIT_COMPARE_VALUE1        (10u)
 #define BUZZER_PWM_0_INIT_COMPARE_VALUE2        (63u)
 #define BUZZER_PWM_0_INIT_INTERRUPTS_MODE       (uint8)(((uint8)(0u <<   \
                                                     BUZZER_PWM_0_STATUS_TC_INT_EN_MASK_SHIFT)) | \

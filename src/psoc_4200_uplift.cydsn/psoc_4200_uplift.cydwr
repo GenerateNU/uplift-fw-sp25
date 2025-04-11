@@ -20,9 +20,9 @@
       <Data key="8ae0451b-5108-442b-8d92-05870e027918" value="BUZZER_PWM" />
       <Data key="8b9e6fdc-ee39-45a9-912d-288ede9abc6a" value="PWM_BACK_RIGHT" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="CURRENT_SENSE_1" />
-      <Data key="9d9ddb8c-9fa9-42cc-b750-bfa8b45dfdde" value="DIR_FRONT_LEFT" />
+      <Data key="9d9ddb8c-9fa9-42cc-b750-bfa8b45dfdde" value="DIR_FRONT" />
       <Data key="35d98913-01d9-42c1-9fc4-dbab22766682" value="CURRENT_SENSE_EN" />
-      <Data key="37b8dd2b-e7f8-4b5c-949f-8399eb11eb26" value="DIR_REAR_LEFT" />
+      <Data key="37b8dd2b-e7f8-4b5c-949f-8399eb11eb26" value="DIR_REAR" />
       <Data key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_0_tx" />
       <Data key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_0_rx" />
       <Data key="72eb0dd9-2aec-42cf-be51-8c5a5a56de16" value="GPIO_15" />
@@ -1403,14 +1403,9 @@
         <Data key="Port Format" value="1,1" />
       </Group>
     </Group>
-    <Group key="ba8b71bc-3a59-46d5-b7f5-a456b85a3c32">
-      <Group key="0">
-        <Data key="Port Format" value="2,1" />
-      </Group>
-    </Group>
     <Group key="bb61b3df-2dd7-453d-b307-c1e02fce1e81">
       <Group key="0">
-        <Data key="Port Format" value="1,6" />
+        <Data key="Port Format" value="2,1" />
       </Group>
     </Group>
     <Group key="c4c247bb-38b3-4452-b50c-a3e2693de198">
@@ -1459,6 +1454,9 @@
       </Group>
     </Group>
     <Group key="UnAssigned Pins">
+      <Group key="ba8b71bc-3a59-46d5-b7f5-a456b85a3c32">
+        <Data key="0" value="133888213063611740" />
+      </Group>
       <Group key="f530cdda-c432-43c3-98af-a446a7dc5ac0">
         <Data key="0" value="133835267537442903" />
       </Group>

@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\PWM_REAR">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0\BUZZER_PWM_0.h">
 <ExpandedNodeIds>
 <v>psoc_4200_uplift-000</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift</v>
@@ -38,18 +38,9 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Source Files\main.c</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>psoc_4200_uplift-000</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\TopDesign</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Pins</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Analog</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Clocks</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Interrupts</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\System</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Directives</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\psoc_4200_uplift.cydwr\Flash Security</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Header Files</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Header Files\cyapicallbacks.h</v>
@@ -66,6 +57,9 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_EN</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0\BUZZER_PWM_0.c</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0\BUZZER_PWM_0.h</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\BUZZER_PWM_0\BUZZER_PWM_0_PM.c</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\Clock_1</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_1</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_1_INT</v>
@@ -74,6 +68,7 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_3</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_3_INT</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_4</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\Generated_Source\PSoC4\CURRENT_SENSE_4_INT</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000">
@@ -138,12 +133,12 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_LEFT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_FRONT_RIGHT_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_LEFT_PM.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR.lst</v>
+<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\DIR_REAR_RIGHT_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\ENABLE_FRONT_MOTORS.lst</v>
@@ -238,12 +233,6 @@
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_1_PM.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_2.lst</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_2_INT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_2_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_3.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_3_INT.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_3_PM.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_4.lst</v>
-<v>psoc_4200_uplift-000\psoc_4200_uplift\CortexM0\ARM_GCC_541\Debug\Listing Files\CURRENT_SENSE_4_INT.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -251,7 +240,7 @@
 <v>Datasheet</v>
 </TreeKeysV2>
 <TreeStatesV2>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="psoc_4200_uplift-000">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>psoc_4200_uplift-000</v>
 <v>psoc_4200_uplift-000\psoc_4200_uplift</v>
@@ -296,16 +285,12 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
+<name v=".\TopDesign\TopDesign.cysch" />
 <name v=".\main.c" />
 <name v=".\psoc_4200_uplift.cydwr" />
-<name v=".\TopDesign\TopDesign.cysch" />
-<name v=".\Generated_Source\PSoC4\I2C_0_I2C_MASTER.c" />
-<name v=".\Generated_Source\PSoC4\I2C_0_scl.h" />
-<name v=".\Generated_Source\PSoC4\I2C_0_sda.h" />
-<name v=".\Generated_Source\PSoC4\I2C_0.h" />
-<name v=".\Generated_Source\PSoC4\I2C_0_BOOT.h" />
-<name v=".\Generated_Source\PSoC4\I2C_0_I2C.h" />
-<name v=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<name v=".\Generated_Source\PSoC4\project.h" />
+<name v=".\Generated_Source\PSoC4\BUZZER_PWM_0.h" />
+<name v=".\Generated_Source\PSoC4\ENABLE_REAR_MOTORS.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -313,7 +298,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 674" SelectedTabbedMdiWindow="d3ba908c-519c-4a35-b0f6-49116cc612a5"><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\main.c" Guid="d3ba908c-519c-4a35-b0f6-49116cc612a5" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cydwr" Guid="78002a26-2323-4a04-8383-ce58c044a357" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\TopDesign\TopDesign.cysch" Guid="123c9b0f-5167-408b-a5c7-0ccf7d955b69" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_I2C_MASTER.c" Guid="ead6816a-a85e-4b60-8a9d-51d349eaee14" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_scl.h" Guid="e2c38a51-1eb3-4494-9525-5715277d4953" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_sda.h" Guid="659dec2b-a4b9-4d5f-9b07-1f7de1a80d0d" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0.h" Guid="7af9d9fa-381c-4b5a-ab16-412295ad2a44" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_BOOT.h" Guid="5fbfdcb3-b165-4766-a38c-edcaf37b57a9" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\I2C_0_I2C.h" Guid="bf53bb49-6994-4e5e-93b1-9ece7378eea6" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="b4f28135-f560-4ae1-8243-adb4f8d55cc5" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="0af04992-6dea-4642-b498-4442ee2f4741" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1112, 554" SelectedTabbedMdiWindow="670d349c-9059-4a01-8fb0-5d1f8075ea94"><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\TopDesign\TopDesign.cysch" Guid="499f6f3f-d76d-489a-b8fb-8d2e71954211" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\main.c" Guid="670d349c-9059-4a01-8fb0-5d1f8075ea94" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cydwr" Guid="9fadcdc6-54ad-454e-9006-75d6491002f9" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\project.h" Guid="50a628e9-3c58-4934-b7a8-ce31e4dc0d2c" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\BUZZER_PWM_0.h" Guid="1120b17f-9e53-4394-8eaa-0bd30424de3b" /><DocumentWindow Key="C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\Generated_Source\PSoC4\ENABLE_REAR_MOTORS.c" Guid="471c592b-7ff0-43c6-878f-3f789fb32458" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="0af04992-6dea-4642-b498-4442ee2f4741" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="Debug" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

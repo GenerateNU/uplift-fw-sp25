@@ -12,6 +12,7 @@
 #include "project.h"
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 /* State Machine Transition Logic
 The first thing to note is that IDLE is also a state. The reason it is not in this table is because transitions
@@ -67,11 +68,88 @@ TODO:
 
 */
 
-// interrupts for current sense 1, 2, 3, 4
-//  - when these write high (3.3v), shut down the associated motors
+#define SONG_LENGTH 26
 
 // This is the enumerate type that defines possible states of the walker
 typedef enum { SLEEP, IDLE, RAISE_LEGS, LOWER_LEGS, RAISE_SEAT, LOWER_SEAT, PANIC } State;
+
+typedef enum {
+    NOTE_REST = 0,
+    NOTE_C4 = 262,
+    NOTE_CS4 = 277,
+    NOTE_D4 = 294,
+    NOTE_DS4 = 311,
+    NOTE_E4 = 330,
+    NOTE_F4 = 349,
+    NOTE_FS4 = 370,
+    NOTE_G4 = 392,
+    NOTE_GS4 = 415,
+    NOTE_A4 = 440,
+    NOTE_AS4 = 466,
+    NOTE_B4 = 494,
+    NOTE_C5 = 523,
+    NOTE_CS5 = 554,
+    NOTE_D5 = 587,
+    NOTE_DS5 = 622,
+    NOTE_E5 = 659,
+    NOTE_F5 = 698,
+    NOTE_FS5 = 740,
+    NOTE_G5 = 784,
+    NOTE_GS5 = 831,
+    NOTE_A5 = 880,
+    NOTE_AS5 = 932,
+    NOTE_B5 = 988,
+    NOTE_C6 = 1047
+} NoteFrequency;
+
+/* Note durations in milliseconds */
+typedef enum {
+    DURATION_WHOLE = 1600,
+    DURATION_HALF = 800,
+    DURATION_QUARTER = 400,
+    DURATION_EIGHTH = 200,
+    DURATION_SIXTEENTH = 100
+} NoteDuration;
+
+const uint16_t noteFrequencies[SONG_LENGTH] =  {
+    NOTE_E4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_REST,
+    NOTE_D4, NOTE_D4, NOTE_D4, NOTE_REST, NOTE_E4, NOTE_G4, NOTE_G4, NOTE_REST,
+    NOTE_E4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4,
+    NOTE_D4, NOTE_D4
+};
+
+//const uint16_t notePeriods[SONG_LENGTH] = 
+
+const uint16_t noteDurations[SONG_LENGTH] = {
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_HALF, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_HALF, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_HALF, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER, DURATION_QUARTER,
+    DURATION_QUARTER, DURATION_HALF
+};
+
+/**
+ * Plays a melody using PWM
+ * @param notes Array of frequency values in Hz (0 for a rest)
+ * @param durations Array of note durations in milliseconds
+ * @param count Number of notes in the arrays
+ */
+void Play_Melody(const uint16_t *notes[], const uint16_t *durations[], uint16_t count) {
+    for (uint16_t i = 0; i < count; i++) {
+        // Set the frequency for the current note
+        volatile int n = ((1/ (*notes[i]))*1000);
+        BUZZER_PWM_0_WritePeriod(n);
+        
+        // Play the note for its duration
+        CyDelay(*durations[i]);
+    }
+    
+    // Stop the PWM after playing all notes
+    //BUZZER_PWM_0_Stop();
+}
+
 
 void i2c_read_transaction(uint32 slave_address, uint8 read_slave_register, uint8 *copy_to, uint32 size) {
     /*
@@ -344,7 +422,6 @@ void are_you_there_imu() {
 
 void scan_i2c_bus() {
     uint8_t address;
-    uint8_t dummy = 0;
     uint32_t status;
 
     I2C_0_Start();
@@ -439,12 +516,54 @@ CY_ISR(LIMIT_SWITCH_4_INT_HANDLER) {
     }
 }
 
+void test() {
+    ENABLE_REAR_MOTORS_Write(1);
+    
+    DIR_REAR_LEFT_Write(1);
+    PWM_REAR_0_Start();
+    for (int i = 0; i < 20; i++ ) {
+        DIR_REAR_LEFT_Write(~DIR_REAR_LEFT_Read());
+        CyDelay(5000);
+    }
+    
+}
+
+void test_all_motors() {
+    
+    uint8 button_one = BUTTON_DIR_UP_Read();
+    uint8 button_two = BUTTON_DIR_DOWN_Read();
+    
+    if (button_one == 1) {
+        PWM_REAR_0_Start();
+        PWM_FRONT_0_Start();
+        PWM_REAR_Write(1);
+        PWM_FRONT_Write(1);
+        
+        DIR_FRONT_Write(1);
+        DIR_REAR_Write(1);
+    }
+    else if (button_two == 1) {
+        PWM_REAR_0_Start();
+        PWM_FRONT_0_Start();
+        PWM_REAR_Write(1);
+        PWM_FRONT_Write(1);
+        
+        DIR_FRONT_Write(0);
+        DIR_REAR_Write(0);
+    }
+    else {
+        PWM_REAR_0_Stop();
+        PWM_FRONT_0_Stop();
+        
+    }
+
+}
 
 int main(void)
 {
     // Enable global interrupts
     CyGlobalIntEnable;
-    
+   
     // 
     CURRENT_SENSE_1_INT_StartEx(CURRENT_SENSE_1_INT_HANDLER);
     CURRENT_SENSE_2_INT_StartEx(CURRENT_SENSE_2_INT_HANDLER);
@@ -457,15 +576,24 @@ int main(void)
     LIMIT_SWITCH_4_INT_StartEx(LIMIT_SWITCH_4_INT_HANDLER);
     
     State current_state = IDLE;
-    I2C_0_Init();
-    I2C_0_Enable();
+    //I2C_0_Init();
+    //I2C_0_Enable();
     
-    LED_2_Write(0);
-
+    
+    ENABLE_FRONT_MOTORS_Write(1);
+    ENABLE_REAR_MOTORS_Write(1);
+    
     
     while(1) {
-        scan_i2c_bus();
-    
+        test_all_motors();
+        //BUZZER_EN_Write(1);
+        
+        //BUZZER_PWM_0_Start();
+        //Play_Melody((const uint16_t *) noteFrequencies, (const NoteDuration *) noteDurations, SONG_LENGTH);
+
+        //scan_i2c_bus();
+        
+
         /*
         switch (current_state) {
             case SLEEP:

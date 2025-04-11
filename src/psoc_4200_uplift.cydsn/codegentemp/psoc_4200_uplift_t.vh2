@@ -1,5 +1,5 @@
 -- Project:   C:\Users\amant\Generate\Uplift-Solutions\uplift-fw-sp25\src\psoc_4200_uplift.cydsn\psoc_4200_uplift.cyprj
--- Generated: 04/07/2025 20:42:35
+-- Generated: 04/11/2025 01:50:09
 -- PSoC Creator  4.4
 
 ENTITY psoc_4200_uplift IS
@@ -8,9 +8,9 @@ ENTITY psoc_4200_uplift IS
         PWM_FRONT(0)_PAD : OUT std_ulogic;
         \I2C_0:sda(0)_PAD\ : INOUT std_ulogic;
         \I2C_0:scl(0)_PAD\ : INOUT std_ulogic;
-        DIR_FRONT_LEFT(0)_PAD : OUT std_ulogic;
+        DIR_FRONT(0)_PAD : OUT std_ulogic;
         DIR_FRONT_RIGHT(0)_PAD : OUT std_ulogic;
-        DIR_REAR_LEFT(0)_PAD : OUT std_ulogic;
+        DIR_REAR(0)_PAD : OUT std_ulogic;
         DIR_REAR_RIGHT(0)_PAD : OUT std_ulogic;
         ENABLE_FRONT_MOTORS(0)_PAD : OUT std_ulogic;
         CURRENT_SENSE_EN(0)_PAD : OUT std_ulogic;
@@ -62,9 +62,9 @@ ARCHITECTURE __DEFAULT__ OF psoc_4200_uplift IS
     SIGNAL ClockBlock_LFClk : bit;
     SIGNAL ClockBlock_Routed1 : bit;
     SIGNAL ClockBlock_SysClk : bit;
-    SIGNAL DIR_FRONT_LEFT(0)__PA : bit;
+    SIGNAL DIR_FRONT(0)__PA : bit;
     SIGNAL DIR_FRONT_RIGHT(0)__PA : bit;
-    SIGNAL DIR_REAR_LEFT(0)__PA : bit;
+    SIGNAL DIR_REAR(0)__PA : bit;
     SIGNAL DIR_REAR_RIGHT(0)__PA : bit;
     SIGNAL ENABLE_FRONT_MOTORS(0)__PA : bit;
     SIGNAL ENABLE_REAR_MOTORS(0)__PA : bit;
@@ -194,16 +194,16 @@ ARCHITECTURE __DEFAULT__ OF psoc_4200_uplift IS
     ATTRIBUTE Location OF \I2C_0:sda(0)\ : LABEL IS "P4[1]";
     ATTRIBUTE lib_model OF \I2C_0:scl(0)\ : LABEL IS "iocell4";
     ATTRIBUTE Location OF \I2C_0:scl(0)\ : LABEL IS "P4[0]";
-    ATTRIBUTE lib_model OF DIR_FRONT_LEFT(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF DIR_FRONT_LEFT(0) : LABEL IS "P2[0]";
+    ATTRIBUTE lib_model OF DIR_FRONT(0) : LABEL IS "iocell5";
+    ATTRIBUTE Location OF DIR_FRONT(0) : LABEL IS "P2[0]";
     ATTRIBUTE lib_model OF DIR_FRONT_RIGHT(0) : LABEL IS "iocell6";
-    ATTRIBUTE Location OF DIR_FRONT_RIGHT(0) : LABEL IS "P2[1]";
-    ATTRIBUTE lib_model OF DIR_REAR_LEFT(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF DIR_REAR_LEFT(0) : LABEL IS "P2[2]";
+    ATTRIBUTE Location OF DIR_FRONT_RIGHT(0) : LABEL IS "P1[6]";
+    ATTRIBUTE lib_model OF DIR_REAR(0) : LABEL IS "iocell7";
+    ATTRIBUTE Location OF DIR_REAR(0) : LABEL IS "P2[2]";
     ATTRIBUTE lib_model OF DIR_REAR_RIGHT(0) : LABEL IS "iocell8";
     ATTRIBUTE Location OF DIR_REAR_RIGHT(0) : LABEL IS "P2[3]";
     ATTRIBUTE lib_model OF ENABLE_FRONT_MOTORS(0) : LABEL IS "iocell9";
-    ATTRIBUTE Location OF ENABLE_FRONT_MOTORS(0) : LABEL IS "P1[6]";
+    ATTRIBUTE Location OF ENABLE_FRONT_MOTORS(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF CURRENT_SENSE_EN(0) : LABEL IS "iocell10";
     ATTRIBUTE Location OF CURRENT_SENSE_EN(0) : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF LED_4(0) : LABEL IS "iocell11";
@@ -1066,7 +1066,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    DIR_FRONT_LEFT:logicalport
+    DIR_FRONT:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1137,18 +1137,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DIR_FRONT_LEFT(0):iocell
+    DIR_FRONT(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DIR_FRONT_LEFT",
+            logicalport => "DIR_FRONT",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => DIR_FRONT_LEFT(0)__PA,
+            pa_out => DIR_FRONT(0)__PA,
             oe => open,
-            pad_in => DIR_FRONT_LEFT(0)_PAD,
+            pad_in => DIR_FRONT(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -1246,7 +1246,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    DIR_REAR_LEFT:logicalport
+    DIR_REAR:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1317,18 +1317,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DIR_REAR_LEFT(0):iocell
+    DIR_REAR(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DIR_REAR_LEFT",
+            logicalport => "DIR_REAR",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => DIR_REAR_LEFT(0)__PA,
+            pa_out => DIR_REAR(0)__PA,
             oe => open,
-            pad_in => DIR_REAR_LEFT(0)_PAD,
+            pad_in => DIR_REAR(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',

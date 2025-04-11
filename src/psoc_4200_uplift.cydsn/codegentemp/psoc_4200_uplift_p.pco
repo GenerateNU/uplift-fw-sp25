@@ -53,11 +53,11 @@ set_io "BUTTON_DIR_UP(0)" iocell 2 6
 set_io "CURRENT_SENSE_4(0)" iocell 3 1
 set_io "BUTTON_TILT_EN(0)" iocell 2 4
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
-set_io "DIR_FRONT_LEFT(0)" iocell 2 0
-set_io "DIR_FRONT_RIGHT(0)" iocell 2 1
-set_io "DIR_REAR_LEFT(0)" iocell 2 2
+set_io "DIR_FRONT(0)" iocell 2 0
+set_io "DIR_FRONT_RIGHT(0)" iocell 1 6
+set_io "DIR_REAR(0)" iocell 2 2
 set_io "DIR_REAR_RIGHT(0)" iocell 2 3
-set_io "ENABLE_FRONT_MOTORS(0)" iocell 1 6
+set_io "ENABLE_FRONT_MOTORS(0)" iocell 2 1
 set_io "CURRENT_SENSE_EN(0)" iocell 3 5
 set_io "LED_1(0)" iocell 4 3
 set_io "LED_2(0)" iocell 0 0
